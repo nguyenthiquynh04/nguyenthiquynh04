@@ -1,0 +1,545 @@
+<html>
+    <heat>
+        <bitle>Bài 1</bitle>
+    </heat>
+    <body>
+        <h1>1.HTML Basic</h1>
+        <p><b>Ý nghĩa của thẻ :</b><br>
+            Tất cả các tài liệu HTML phải bắt đầu bằng khai báo loại tài liệu: .<!DOCTYPE html><br>
+            Bản thân tài liệu HTML bắt đầu bằng và kết thúc bằng .<html></html><br>
+            Phần hiển thị của tài liệu HTML nằm giữa và . <body></body>
+        </p>
+        <h2>Ví dụ:
+            <!DOCTYPE html>
+            <html>
+            <body>
+            <h1>Hello</h1>
+            <p>Thiết kế web</p>
+            </body>
+            </html>
+        </h2>
+        <h1>2.HTML Elements</h1>
+        <p><b>Ý nghĩa : Các phần tử lồng nhau</b><br>
+        Các phần tử HTML có thể được lồng vào nhau (điều này có nghĩa là các phần tử có thể chứa các phần tử khác)<br>
+        Tất cả các tài liệu HTML bao gồm các phần tử HTML lồng nhau.
+        </p>
+        <h2>Ví dụ :
+            <!DOCTYPE html>
+            <html>
+            <body>
+            <h1>My First Heading</h1>
+            <p>My first paragraph.</p>
+            </body>
+            </html>
+        </h2>
+        <p><b>Ý nghĩa: các phần tử trống :</b><br>
+            Các phần tử HTML không có nội dung được gọi là các phần tử trống.<br>
+            Thẻ xác định ngắt dòng và là một phần tử trống không có thẻ đóng:<br>.
+        </p>
+        <h2>Ví dụ :
+            <p>This is a <br> paragraph with a line break.</p>
+        </h2>
+        <h1>3.HTML Attributes</h1>
+        <p><b>Ý nghĩa :</b>
+            Tất cả các phần tử HTML có thể có các thuộc tính<br>
+            Thuộc tính cung cấp thêm thông tin về các phần tử<br>
+            Các thuộc tính luôn được chỉ định trong thẻ bắt đầu<br>
+            Các thuộc tính thường có các cặp tên/giá trị như: name="value"
+        </p>
+        <p><b>Thuộc tính href:</b> Thẻ xác định một siêu liên kết. Thuộc tính chỉ định URL của trang Liên kết đi đến:<a>href</p>
+        <h2>Ví dụ :
+            <a href="https://www.w3schools.com">Visit W3Schools</a><br>
+        </h2>
+        <p><b>Thuộc tính src :</b> được sử dụng để nhúng một hình ảnh trong một trang HTML. Thuộc tính Chỉ định đường dẫn đến hình ảnh sẽ được hiển thị:<img>src<br></p>
+        <h2>Ví dụ :
+            <img src="img_girl.jpg">
+        </h2>
+        <h1>3.HTML Headings</h1>
+        <p><b>Tiêu đề HTML </b>
+            Các tiêu đề HTML được định nghĩa bằng các thẻ đến.<h1><h6><br><h1> xác định tiêu đề quan trọng nhất. xác định tiêu đề ít quan trọng nhất.<h6>
+        </p>
+        <h2>Ví dụ :<br>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+        </h2>
+        <h1>4.HTML Paragraphs</h1>
+        <p><b>Ý nghĩa :</b></p>
+        <p>Đoạn văn HTML<br>
+            Phần tử HTML định nghĩa một đoạn văn.<p>
+            Một đoạn văn luôn bắt đầu trên một dòng mới và các trình duyệt tự động thêm một số khoảng trắng (lề) trước và sau một đoạn văn
+        </p>
+            <h2>Ví dụ :
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+            </h2>
+        <p><b>Hiển thị HTML</b><br>
+            Bạn không thể chắc chắn HTML sẽ được hiển thị như thế nào.<br>
+            Màn hình lớn hay nhỏ và cửa sổ thay đổi kích thước sẽ tạo ra kết quả khác nhau<br>
+            Với HTML, bạn không thể thay đổi hiển thị bằng cách thêm khoảng trắng thừa hoặc dòng thừa trong mã HTML của mình<br>
+            Trình duyệt sẽ tự động xóa mọi khoảng trắng và dòng thừa khi trang Hiển thị
+        </p>
+        <h2>Ví dụ :
+            <p>
+                This paragraph
+                contains a lot of lines
+                in the source code,
+                but the browser
+                ignores it.
+                </p>
+
+                <p>
+                This paragraph
+                contains         a lot of spaces
+                in the source         code,
+                but the        browser
+                ignores it.
+                </p>
+        </h2>
+        <p><b>Quy tắc ngang HTML</b><br>
+            Thẻ xác định ngắt theo chủ đề trong một trang HTML và thường xuyên nhất được hiển thị dưới dạng quy tắc ngang.<hr><br>
+            Phần tử được sử dụng để tách nội dung (hoặc xác định thay đổi) trong HTML trang:<hr>
+        </p>
+        <h2>Ví dụ :
+            <h1>This is heading 1</h1>
+            <p>This is some text.</p>
+            <hr>
+            <h2>This is heading 2</h2>
+            <p>This is some other text.</p>
+            <hr>
+        </h2>
+        <p><b>Ngắt dòng HTML</b><br>
+            Phần tử HTML định nghĩa ngắt dòng.<br><br>
+            Sử dụng nếu bạn muốn ngắt dòng (một dòng mới) mà không cần bắt đầu một đoạn mới:<br>
+        </p>
+        <h2>Ví du :
+            <p>This is<br>a paragraph<br>with line breaks.</p>
+        </h2>
+        <p><b>Bài toán bài thơ</b><br>
+            Bài thơ này sẽ hiển thị trên một dòng duy nhất
+        </p>
+        <h2>Ví dụ :
+            <p>
+                My Bonnie lies over the ocean<br>My Bonnie lies over the sea.<br> My Bonnie lies over the ocean.<br>Oh, bring back my Bonnie to me.
+            </p>
+        </h2>
+        <h1>5.HTML Styles</h1>
+        <p><b>Ý nghĩa :</b></p>
+        <p>Thuộc tính HTML Style<br>Thiết lập kiểu của một phần tử HTML, có thể được thực hiện với thuộc tính.style<br>Thuộc tính HTML có cú pháp sau:style</p>
+        <h2>Ví dụ :
+            <tagname style="property:value;"></tagname>
+        </h2>
+        <p><b>Màu nền</b><br> Thuộc tính CSS xác định màu nền cho một phần tử HTML.background-color</p>
+        <h2>Ví dụ :
+            <body style="background-color:powderblue;">
+                <h1>This is a heading</h1>
+                <p>This is a paragraph.</p> 
+                </body>
+        </h2>
+        <h1>6.HTML Text Formatting</h1>
+        <p><b>Ý nghĩa :</b></p>
+        <p><b>HTML chứa một số yếu tố để xác định văn bản với ý nghĩa đặc biệt</b></p>
+        <h2>Ví dụ :
+            This text is bold
+            text is italic
+            This is subscript and superscript
+        </h2>
+        <p><b>Các yếu tố định dạng HTML<br>Các yếu tố định dạng được thiết kế để hiển thị các loại văn bản đặc biệt:</b><br>
+        <b> - Văn bản in đậm
+        <strong> - Văn bản quan trọng
+        <i> - Văn bản in nghiêng
+        <em> - Văn bản nhấn mạnh
+        <mark> - Văn bản được đánh dấu
+        <small> - Văn bản nhỏ hơn
+        <del> - Văn bản đã xóa
+        <ins> - Chèn văn bản
+        <sub> - Văn bản chỉ số dưới
+        <sup> - Văn bản chỉ số trên
+        </p>
+        <p><b>Các phần tử HTML <b> và <mạnh><br>Phần tử HTML định nghĩa văn bản in đậm, mà không có bất kỳ tầm quan trọng bổ sung nào.<b></b></p>
+        <h2>Ví dụ :
+            <b>This text is bold</b>
+        </h2>
+        <h1>7.HTML Quotation and Citation Elements</h1>
+        <p><b>Ý nghĩa :</b></p>
+        <p>HTML <blockquote> cho trích dẫn<br>Phần tử HTML định nghĩa một phần được trích dẫn từ một nguồn khác.<blockquote><br>Trình duyệt thường thụt lề các phần tử.<blockquote></p>
+        <h2>Ví dụ :
+            <p>Here is a quote from WWF's website:</p>
+            <blockquote cite="http://www.worldwildlife.org/who/index.html">
+            For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+            </blockquote>
+        </h2>
+        <p>HTML <q> cho các trích dẫn ngắn<br>Thẻ HTML xác định một trích dẫn ngắn.<q><br>Các trình duyệt thường chèn dấu ngoặc kép xung quanh dấu ngoặc kép.</p>
+        <h2>Ví dụ :
+            <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+        </h2>
+        <p>HTML <abbr> cho các chữ viết tắt<br>
+            Thẻ HTML xác định chữ viết tắt hoặc từ viết tắt, như "HTML", "CSS", "Ông", "Tiến sĩ", "ASAP", "ATM".<abbr><br>
+            Đánh dấu chữ viết tắt có thể cung cấp thông tin hữu ích cho trình duyệt, dịch thuật hệ thống và công cụ tìm kiếm.<br>
+            Mẹo: Sử dụng thuộc tính global title [tiêu đề] toàn cầu để Hiển thị mô tả cho viết tắt / viết t khi bạn di chuột qua phần tử .
+        </p>
+        <h2>Ví dụ :
+            <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+        </h2>
+        <p>HTML <địa chỉ> cho thông tin liên hệ<br>
+            Thẻ HTML xác định thông tin liên hệ cho tác giả / chủ sở hữu của tài liệu hoặc một bài báo.<address><br>
+            Thông tin liên hệ có thể là địa chỉ email, URL, địa chỉ thực, điện thoại số, xử lý phương tiện truyền thông xã hội, v.v.<br>
+            Văn bản trong phần tử thường hiển thị bằng chữ nghiêng và các trình duyệt sẽ Luôn thêm ngắt dòng trước và sau phần tử.<address><address>
+        </p>
+        <h2>Ví dụ :
+            <address>
+                Written by John Doe.<br>
+                Visit us at:<br>
+                Example.com<br>
+                Box 564, Disneyland<br>
+                USA
+                </address>
+        </h2>
+        <p>HTML <trích dẫn> cho tiêu đề công việc<br>
+            Thẻ HTML xác định tiêu đề của một công việc sáng tạo (ví dụ: một cuốn sách, một bài thơ, một bài hát, một bộ phim, một bức tranh, một tác phẩm điêu khắc, v.v.).<cite><br>
+            Ghi: Tên của một người không phải là tiêu đề của một tác phẩm.<br>
+            Văn bản trong phần tử thường hiển thị bằng chữ nghiêng.<cite></p>
+        <h2>
+            <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+        </h2>
+        <p>HTML <bdo> để ghi đè hai chiều<br>
+            BDO là viết tắt của Bi-Directional Override.<br>
+            Thẻ HTML được sử dụng để ghi đè Hướng văn bản hiện tại:<bdo>
+        </p>
+        <h2>Ví dụ :
+            <bdo dir="rtl">This text will be written from right to left</bdo>
+        </h2>
+        <h1>8.HTML Comments</h1>
+        <p><b>Ý nghĩa :</b></p>
+        <p>Thêm bình luận<br>Với nhận xét, bạn có thể đặt thông báo và lời nhắc trong mã HTML của mình:</p>
+        <h2>Ví dụ :
+            <!-- This is a comment -->
+            <p>This is a paragraph.</p>
+            <!-- Remember to add more information here -->
+        </h2>
+        <p>Ẩn nội dung<br>Nhận xét có thể được sử dụng để ẩn nội dung.<br>Điều này có thể hữu ích nếu bạn tạm thời ẩn nội dung:</p>
+        <h2>Ví dụ :
+            <p>This is a paragraph.</p>
+            <!-- <p>This is another paragraph </p> -->
+            <p>This is a paragraph too.</p>
+        </h2>
+        <p>Ẩn nội dung nội tuyến<br> Nhận xét có thể được sử dụng để ẩn các phần ở giữa mã HTML.</p>
+        <h2>Ví dụ :
+            <p>This <!-- great text --> is a paragraph.</p>
+        </h2>
+        <h1>9.HTML Colors</h1>
+        <p><b>Ý nghĩa :</b></p>
+        <p>Màu nền<br> Bạn có thể đặt màu nền cho các phần tử HTML:
+        </p>
+        <h2>Ví dụ :
+            <h1 style="background-color:DodgerBlue;">Hello World</h1>
+            <p style="background-color:Tomato;">Lorem ipsum...</p>
+        </h2>
+        <p>Màu văn bản<br>Bạn có thể đặt màu của văn bản:</p>
+        <h2>Ví dụ :
+            <h1 style="color:Tomato;">Hello World</h1>
+            <p style="color:DodgerBlue;">Lorem ipsum...</p>
+            <p style="color:MediumSeaGreen;">Ut wisi enim...</p>
+        </h2>
+        <p>Màu đường viền<br>Bạn có thể đặt màu của đường viền:</p>
+        <h2><h1 style="border:2px solid Tomato;">Hello World</h1>
+            <h1 style="border:2px solid DodgerBlue;">Hello World</h1>
+            <h1 style="border:2px solid Violet;">Hello World</h1>
+        </h2>
+        <p>Giá trị màu
+            Trong HTML, màu sắc cũng có thể được chỉ định bằng cách sử dụng các giá trị RGB, giá trị HEX, HSL giá trị, giá trị RGBA và giá trị HSLA.<br>
+            Ba phần tử <div> sau đây có màu nền được đặt bằng RGB, Giá trị HEX và HSL:<br>
+            RGB(255, 99, 71)<br> #ff6347<br>HSL(9, 100%, 64%)<br>
+            Hai phần tử <div> sau đây có màu nền được đặt bằng RGBA và các giá trị HSLA, thêm kênh Alpha vào màu (ở đây chúng ta có 50% minh bạch):<br>
+            RGBA(255, 99, 71, 0.5)<br>HSLA(9, 100%, 64%, 0.5)
+        </p>
+        <h2>Ví dụ :
+            <h1 style="background-color:rgb(255, 99, 71);">...</h1>
+            <h1 style="background-color:#ff6347;">...</h1>
+            <h1 style="background-color:hsl(9, 100%, 64%);">...</h1>
+            <h1 style="background-color:rgba(255, 99, 71, 0.5);">...</h1>
+            <h1 style="background-color:hsla(9, 100%, 64%, 0.5);">...</h1>
+        </h2>
+        <h1>9.HTML Links</h1>
+        <p><b>Ý nghĩa :</b></p>
+        <p><b>Liên kết HTML - Siêu liên kết</b></p>
+        Liên kết HTML là siêu liên kết<br>
+        Bạn có thể nhấp vào một liên kết và chuyển đến một tài liệu khác<br>
+        Khi bạn di chuyển chuột qua một liên kết, mũi tên chuột sẽ biến thành một bàn tay nhỏ
+        <p><b>Liên kết HTML - Cú pháp</b>
+            Thẻ HTML xác định một siêu liên kết. Nó có cú pháp sau:<a><br>
+            <a href="url">link text</a>
+            Thuộc tính quan trọng nhất của phần tử là thuộc tính href, cho biết đích đến của liên kết.<a><br>
+            Văn bản liên kết là phần sẽ hiển thị cho người đọc<br>
+            Nhấp vào văn bản liên kết, sẽ đưa người đọc đến địa chỉ URL được chỉ định
+        </p>
+        <h2>Ví dụ :
+            <a href="https://www.w3schools.com/">Visit W3Schools.com!</a>
+        </h2>
+        <p><b>Liên kết HTML - Thuộc tính đích</b>
+            Theo mặc định, trang được liên kết sẽ được hiển thị trong cửa sổ trình duyệt hiện tại. Để thay đổi điều này, bạn phải chỉ định một mục tiêu khác cho liên kết<br>
+            Thuộc tính chỉ định nơi mở tài liệu được liên kết.target<br>    
+            Thuộc tính có thể có một trong các giá trị sau:target<br>
+            self -Mặc định. Mở tài liệu trong cùng một cửa sổ / tab khi nó được nhấp vào<br>
+            blank - Mở tài liệu trong một cửa sổ hoặc tab mới<br>
+            parent - Mở tài liệu trong khung cha<br>
+            top - Mở tài liệu trong toàn bộ nội dung của cửa sổ
+        </p>
+        <h2>Ví dụ :
+            <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+        </h2>
+        <p><b>URL tuyệt đối so với URL tương đối :</b>
+            Cả hai ví dụ trên đều sử dụng URL tuyệt đối (địa chỉ web đầy đủ) trong thuộc tính.href<br>Liên kết cục bộ (liên kết đến một trang trong cùng một trang web) được chỉ định với URL tương đối (không có Phần "https://www"):
+        </p>
+        <h2>Ví dụ :
+            <h2>Absolute URLs</h2>
+            <p><a href="https://www.w3.org/">W3C</a></p>
+            <p><a href="https://www.google.com/">Google</a></p>
+            <h2>Relative URLs</h2>
+            <p><a href="html_images.asp">HTML Images</a></p>
+            <p><a href="/css/default.asp">CSS Tutorial</a></p>
+        </h2>
+        <p><b>Liên kết HTML - Sử dụng hình ảnh làm liên kết</b><br>Để sử dụng hình ảnh làm liên kết, chỉ cần đặt thẻ bên trong thẻ:<img><a></p>
+        <h2>Ví dụ :
+            <a href="default.asp">
+            <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+            </a>
+        </h2>
+        <p><b>Liên kết đến địa chỉ email</b><br>Sử dụng bên trong thuộc tính để tạo liên kết mở chương trình email của người dùng (đến Hãy để họ gửi email mới): mailto: href</p>
+        <h2>Ví dụ :
+            <a href="mailto:someone@example.com">Send email</a>
+        </h2>
+        <p><b>Nút dưới dạng liên kết</b><br>
+            Để sử dụng nút HTML làm liên kết, bạn phải thêm một số mã JavaScript<br>JavaScript cho phép bạn chỉ định những gì xảy ra tại một số sự kiện nhất định, chẳng hạn như nhấp vào nút:</p>
+        <h2>Ví dụ :
+            <button onclick="document.location='default.asp'">HTML Tutorial</button>
+        </h2>
+        <p><b>Tiêu đề liên kết :</b>
+            Thuộc tính chỉ định thông tin bổ sung về một phần tử. Thông tin thường được hiển thị dưới dạng văn bản chú giải công cụ khi chuột di chuyển qua phần tử.title</p>
+        <h2>Ví dụ :
+            <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+        </h2>
+        <p><b>Tìm hiểu thêm về URL tuyệt đối và URL tương đối</b></p>
+        <h2>Ví dụ :
+            <a href="https://www.w3schools.com/html/default.asp">HTML tutorial</a>
+        </h2>
+        <h1>10.HTML Images</h1>
+        <p><b>Ý nghĩa :</b></p>
+        <p><b>Cú pháp hình ảnh HTML</b>
+            Thẻ HTML được sử dụng để nhúng một hình ảnh trong một trang web.<img><br>Hình ảnh không được chèn vào trang web về mặt kỹ thuật; Hình ảnh được liên kết với WEB Trang. Thẻ tạo ra một giữ không gian cho hình ảnh được tham chiếu.<img><br>
+            Thẻ trống, chỉ chứa các thuộc tính và không có thẻ đóng.<img><br>Thẻ có hai yêu cầu Thuộc tính:<img> <br>
+            src - Chỉ định đường dẫn đến hình ảnh<br>
+            alt - Chỉ định văn bản thay thế cho hình ảnh<br>
+            Cú pháp<br><img src="url" alt="alternatetext">
+        </p>
+        <p><b>Thuộc tính src</b>
+            Thuộc tính bắt buộc chỉ định đường dẫn (URL) đến hình ảnh.src<br> 
+            Ghi: Khi một trang web tải, đó là trình duyệt, tại đó khoảnh khắc, lấy hình ảnh từ một máy chủ web và chèn nó vào trang. Do đó, hãy đảm bảo rằng ảnh thực sự ở cùng một vị trí trong mối quan hệ vào trang web, nếu không khách truy cập của bạn sẽ nhận được biểu tượng liên kết bị hỏng. Sự tan vỡ Biểu tượng liên kết và văn bản được hiển thị nếu trình duyệt không thể tìm thấy hình ảnh.alt</p>
+        <h2>Ví dụ :
+            <img src="img_chania.jpg" alt="Flowers in Chania">
+        </h2>
+        <p><b>Thuộc tính alt</b>
+            Thuộc tính bắt buộc cung cấp văn bản thay thế cho hình ảnh, nếu người dùng cho Một số lý do không thể xem nó (vì kết nối chậm, lỗi trong SRC thuộc tính hoặc nếu người dùng sử dụng trình đọc màn hình).alt<br>
+            Giá trị của thuộc tính phải mô tả hình ảnh:alt</p>
+        <h2>Ví dụ :
+            <img src="img_chania.jpg" alt="Flowers in Chania">
+        </h2>
+        <p><b>Kích thước hình ảnh - chiều rộng và chiều cao</b>
+            Bạn có thể sử dụng thuộc tính để chỉ định chiều rộng và chiều cao của hình ảnh.style</p>
+        <h2>Ví dụ :
+            <img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">
+        </h2>
+        <p><b>Chiều rộng và chiều cao, hay kiểu dáng</b>
+            Các thuộc tính , và là tất cả đều hợp lệ trong HTML.widthheightstyle<br>
+            Tuy nhiên, chúng tôi khuyên bạn nên sử dụng thuộc tính này. Nó ngăn không cho các trang tính kiểu thay đổi Kích thước của hình ảnh:style</p>
+        <h2>Ví dụ :
+            <!DOCTYPE html>
+            <html>
+            <head>
+            <style>
+            img {
+            width: 100%;
+            }
+            </style>
+            </head>
+            <body>
+            <img src="html5.gif" alt="HTML5 Icon" width="128" height="128">
+            <img src="html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+            </body>
+            </html>
+        </h2>
+        <p><b>Hình ảnh trong thư mục khác</b>
+            Nếu bạn có hình ảnh của mình trong một thư mục con, bạn phải bao gồm thư mục name trong thuộc tính:src</p>
+        <h2>Ví dụ :
+            <img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+        </h2>
+        <p><b>Hình ảnh trên máy chủ / trang web khác</b>
+            Một số trang web trỏ đến một hình ảnh trên một máy chủ khác<br>
+            Để trỏ đến một hình ảnh trên một máy chủ khác, bạn phải chỉ định tuyệt đối (đầy đủ) URL trong thuộc tính:src</p>
+        <h2>Ví dụ :
+            <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+        </h2>
+        <p><b>Hình ảnh động HTML cho phép GIF động:</b></p>
+        <h2>Ví dụ :
+            <img src="programming.gif" alt="Computer Man" style="width:48px;height:48px;">
+        </h2>
+        <p><b>Hình ảnh dưới dạng liên kết
+            Để sử dụng hình ảnh làm liên kết, hãy đặt thẻ bên trong thẻ:<img><a></b></p>
+        <h2>Ví dụ :
+            <a href="default.asp">
+            <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+            </a>
+        </h2>
+        <p><b>Hình ảnh nổi :Sử dụng thuộc tính CSS để cho phép hình ảnh nổi sang phải hoặc sang trái của văn bản:float</b></p>
+        <h2>Ví dụ :
+            <p><img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+                The image will float to the right of the text.</p>
+                <p><img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+                The image will float to the left of the text.</p>
+        </h2>
+        <h1>11.HTML Tables</h1>
+        <p><b>ý nghĩa</b></p>
+        <p><b>Xác định bảng HTML</b> :Một bảng trong HTML bao gồm các ô bảng bên trong các hàng và cột</p>
+        <h2>Ví dụ :
+            <table>
+                <tr>
+                  <th>Company</th>
+                  <th>Contact</th>
+                  <th>Country</th>
+                </tr>
+                <tr>
+                  <td>Alfreds Futterkiste</td>
+                  <td>Maria Anders</td>
+                  <td>Germany</td>
+                </tr>
+                <tr>
+                  <td>Centro comercial Moctezuma</td>
+                  <td>Francisco Chang</td>
+                  <td>Mexico</td>
+                </tr>
+              </table>
+        </h2>
+        <p><b>Ô Bảng</b>
+            Mỗi ô bảng được xác định bởi một và một thẻ.<td></td><br>td là viết tắt của dữ liệu bảng<br>Tất cả mọi thứ giữa và là nội dung của ô bảng.<td></td></p>
+        <h2>Ví dụ :
+            <table>
+                <tr>
+                  <td>Emil</td>
+                  <td>Tobias</td>
+                  <td>Linus</td>
+                </tr>
+              </table>
+        </h2>
+        <p><b>Hàng trong Bảng</b>
+            Mỗi hàng trong bảng bắt đầu bằng a và kết thúc bằng thẻ .<tr></tr><br>tr là viết tắt của hàng bàng</p>
+        <h2>Ví dụ :
+            <table>
+                <tr>
+                  <td>Emil</td>
+                  <td>Tobias</td>
+                  <td>Linus</td>
+                </tr>
+                <tr>
+                  <td>16</td>
+                  <td>14</td>
+                  <td>10</td>
+                </tr>
+              </table>
+        </h2>
+        <p><b>Tiêu đề bảng</b>
+            Đôi khi bạn muốn các ô của mình là ô tiêu đề bảng. Trong những trường hợp đó, hãy sử dụng thẻ thay vì thẻ:<th><td><br> th là viết tắt của tiêu đề bảng</p>
+        <h2>Ví dụ :
+            <table>
+                <tr>
+                  <th>Person 1</th>
+                  <th>Person 2</th>
+                  <th>Person 3</th>
+                </tr>
+                <tr>
+                  <td>Emil</td>
+                  <td>Tobias</td>
+                  <td>Linus</td>
+                </tr>
+                <tr>
+                  <td>16</td>
+                  <td>14</td>
+                  <td>10</td>
+                </tr>
+              </table>
+        </h2>
+        <h1>12.HTML Lists</h1>
+        <p><b>Ý nghĩa :</b></p>
+        <p><b>Danh sách HTML không có thứ tự</b>
+            Một danh sách không có thứ tự bắt đầu bằng thẻ. Mỗi mục danh sách bắt đầu bằng thẻ .<ul><li><br>
+            Các mục trong danh sách sẽ được đánh dấu bằng dấu đầu dòng (vòng tròn nhỏ màu đen) theo mặc định</p>
+        <h2>Ví dụ :
+            <ul>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+              </ul>
+        </h2>
+        <p><b>Danh sách HTML được sắp xếp theo thứ tự</b>
+            Danh sách được sắp xếp theo thứ tự bắt đầu bằng thẻ . Mỗi mục danh sách bắt đầu bằng thẻ .<ol><li><br>
+            Các mục danh sách sẽ được đánh dấu bằng số theo mặc định</p>
+        <h2>Ví dụ :
+            <ol>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+              </ol>
+        </h2>
+        <p><b>Danh sách mô tả HTML</b>
+            HTML cũng hỗ trợ danh sách mô tả<br>
+            Danh sách mô tả là một danh sách các thuật ngữ, với mô tả của từng thuật ngữ<br>
+            Thẻ xác định danh sách mô tả, thẻ xác định thuật ngữ (tên) và thẻ mô tả từng thuật ngữ:<dl><dt><dd></p>
+        <h2>Ví dụ :
+            <dl>
+                <dt>Coffee</dt>
+                <dd>- black hot drink</dd>
+                <dt>Milk</dt>
+                <dd>- white cold drink</dd>
+              </dl>
+        </h2>
+        <h1>13.HTML Block and Inline Elements</h1>
+        <p><b>Ý nghĩa :</b></p>
+        <p><b>Các yếu tố cấp khối</b>
+            Phần tử cấp khối luôn bắt đầu trên một dòng mới và các trình duyệt Tự động thêm một số khoảng trắng (lề) trước và sau phần tử<br>
+            Một phần tử cấp khối luôn chiếm toàn bộ chiều rộng có sẵn (trải dài ra bên trái và bên phải càng xa càng tốt)<br>
+            Hai phần tử khối thường được sử dụng là: và .<p><div><br>Phần tử định nghĩa một đoạn trong một Tài liệu HTML.<p><br>
+            Phần tử định nghĩa một phép chia hoặc một phần trong tài liệu HTML.<div>
+            Phần tử <p> là một phần tử cấp khối<br>
+            Phần tử <div> là một phần tử cấp khối</p>
+        <h2>Ví dụ :
+            <p>Hello World</p>
+            <div>Hello World</div>
+        </h2>
+        <p><b>Các yếu tố nội tuyến</b>
+            Một phần tử nội tuyến không bắt đầu trên một dòng mới<br>
+            Một phần tử nội tuyến chỉ chiếm nhiều chiều rộng khi cần thiết<br>
+            Đây là một yếu tố <nhịp> bên trong một đoạn văn</p>
+        <h2>Ví dụ :
+            <span>Hello World</span>
+        </h2>
+        <p><b>Yếu tố <div></b>
+            Yếu tố là thường được sử dụng làm vùng chứa cho các phần tử HTML khác.<div><br>
+            Phần tử không có thuộc tính bắt buộc, nhưng , và là phổ biến.<div>styleclassid<br>
+            Khi được sử dụng cùng với CSS, phần tử có thể được sử dụng để tạo kiểu cho các khối của nội dung:<div></p>
+        <h2>Ví dụ :
+            <div style="background-color:black;color:white;padding:20px;">
+                <h2>London</h2>
+                <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+              </div>
+        </h2>
+        <p><b>Phần tử <span></b>
+            Yếu tố là Bộ chứa nội tuyến được sử dụng để đánh dấu một phần của văn bản hoặc một phần của tài liệu.<span><br>
+            Phần tử không có thuộc tính bắt buộc, nhưng , và là phổ biến.<span>styleclassid<br>
+            Khi được sử dụng cùng với CSS, phần tử có thể được sử dụng để tạo kiểu cho các phần của văn bản:<span></p>
+        <h2>Ví dụ :
+            <p>My mother has <span style="color:blue;font-weight:bold;">blue</span> eyes and my father has <span style="color:darkolivegreen;font-weight:bold;">dark green</span> eyes.</p>
+        </h2>
+    </body>
+</html>
