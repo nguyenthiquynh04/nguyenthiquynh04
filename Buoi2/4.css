@@ -1,0 +1,48 @@
+<style>
+  body {
+    font-family: 'Roboto Slab', serif;
+      text-align: center;
+      background-color: rgb(66, 189, 189);
+  }
+  .page-container {
+    width: 560px;
+    margin: 0 auto;
+  }
+
+  .container {
+    width: 560px;
+    margin: 0 auto;
+    background-color: rgb(194, 186, 186);
+  }
+  h1 {
+    color: rgb(19, 151, 151);
+  }
+  h4 {
+    text-align: right;
+  }
+  i {
+    color: rgb(66, 68, 189);
+  }
+  a {
+    color: rgb(66, 68, 189);
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: rgb(228, 228, 19);
+  }
+
+  .image-container {
+    width: 560px;
+    height: 430px;
+    background-color: rgb(194, 186, 186);
+  }
+  .colored-text {
+    background-color: rgb(19, 151, 151);
+    padding: 10px;
+  }
+  img {
+    width: 90%;
+    height: 90%;
+  }
+  </style>
