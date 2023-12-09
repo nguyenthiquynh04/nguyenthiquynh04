@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 5%;
+  background-color: #c6c5c5;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 10px 5px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: rgb(99, 123, 144);
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+body{
+        margin: 0;
+}
+section {
+    border-radius: 60px;
+    max-width: 1400px;
+    margin: 20px auto;
+    background-image: url("https://i.pinimg.com/564x/15/4b/b2/154bb23ca065df8c4dbbe157cee72ded.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 40px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #000000;
+}
+h1{
+   font-size: 100px;
+}
+.conten{
+    font-size: 20px;
+}
+.container{
+    border-radius: 50px;
+    max-width: 200px;
+    margin: 20px auto;
+    background-color: #056c2e;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #fff;
+}
+.container a{
+   color:#fff; 
+    opacity: 1;
+    text-decoration: none;
+    font-size: 30px;
+}
+.container a:hover{
+   color:#297eb3
+}
+/* phần giữa */
+.contai{
+    padding: 80px;
+}
+.contay{
+   padding:80px;
+}
+h2{
+    font-size: 40px;
+}
+h3{
+    font-size:30px;
+}
+.contai a{
+   color: rgb(0, 0, 0); 
+    opacity: 1;
+    text-decoration: none;
+    font-size: 18px;
+}
+.contay a{
+   color: rgb(0, 0, 0); 
+    opacity: 1;
+    text-decoration: none;
+    font-size: 16px;
+}
+.contai a:hover {
+   color: rgb(104, 184, 204);
+}
+.contay a:hover{
+    color:rgb(133, 141, 210);
+}
+.body1 {
+    display: flex;
+    justify-content: space-between;
+ }
+ .col1 {
+    border-radius: 27px;
+    width: 380px;
+    height:200px;
+    overflow: hidden;
+ }
+ .cok{
+   padding: 18px
+ }
+ .col1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cắt ảnh để đạt kích thước như đã định */
+  }
+  .col2 h3{
+   font-size:25px;
+  }
+ .col2{
+    border-radius: 27px;
+    width: 380px;
+    height:350px;
+    background-color:rgb(99, 123, 144);
+    text-align: left;
+    font-size: 15px;
+ }
+ .col3 h3{
+   font-size:20px;
+ }
+ .col3 {
+    border-radius: 27px;
+    width: 49%;
+    height:110px;
+    overflow: hidden;
+    background-color:rgb(99, 123, 144);
+ }
+ /* phần cuối */
+ .col4{
+    width: 44%;
+    height:200px;
+    overflow: hidden;
+    
+ }
+ .col5{
+    width: 10%;
+    height:200px;
+    overflow: hidden;
+    text-align: center;
+ }
+ .col5 a{
+   color:blue
+ }
+ .col6{
+    width: 10%;
+    height:200px;
+    overflow: hidden;
+    text-align: center;
+ }
+ .col6 a{
+   color:blue;
+ }
+ .col7{
+    width: 20%;
+    height:200px;
+    overflow: hidden;
+    text-align: center;
+ }
+ .body2{
+    display: flex;
+    flex-direction: row;
+ }
+ .col8{
+    width: 20%;
+    height:50px;
+    overflow: hidden;
+    text-align: center;
+ }
+
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="https://m3.material.io/get-started">Get Started</a></li>
+  <li><a href="https://m3.material.io/develop">Developt</a></li>
+  <li><a href="https://m3.material.io/styles">Style</a></li>
+  <li><a href="https://material.io/blog">Blog</a></li>
+</ul>
+
+<div style="margin-left:5%;padding:1px 16px;height:1000px;">
+    <section>
+        <h1>Material Design</h1>
+        <div class="conten">
+            <p>Material 3 is the latest version of Google’s open-source design system. Design and<br>
+                build beautiful, usable products with Material 3.</p>
+        </div> 
+            <div class="container">
+                <a href="https://m3.material.io/get-started"><b>Get started</b></a>
+            </div>
+    </section> 
+    <div class="contai">
+        <h2>News & launches</h2>
+        <div class="body1">
+            <div class="col2" >
+            <div class="col1">
+                <img src="https://i.pinimg.com/564x/99/65/d3/9965d3043d11da7e8460369d8df67701.jpg" alt="1">
+            </div>
+            <a href="https://www.figma.com/community/file/1035203688168086460">
+                <div class="cok">
+                    <h3>   Figma design kit</h3>
+                    <p>   jumpstart your M3 designs with the complete library of ready-made components</p></a>
+                </div>
+            </div>
+
+            <div class="col2" >
+                <div class="col1">
+                    <img src="https://i.pinimg.com/564x/5b/27/dc/5b27dc5cb034382574fbf8ed11d2d607.jpg" alt="2">
+                </div>
+                <a href="https://material.io/blog/material-you-large-screens">
+                    <div class="cok">
+                        <h3>Large screen guidance</h3>
+                        <p>Get started adapting your layouts for a range of window size classes and hardware</p></a>
+                    </div>
+                </div>
+            
+            <div class="col2" >
+            <div class="col1">
+                <img src="https://i.pinimg.com/564x/e7/00/e9/e700e900f946a8913f52b621aff06c9b.jpg" alt="3">
+            </div>
+            <a href="https://material.io/blog/material-google-io23">
+                <div class="cok">
+                    <h3>Material Design at Google I/O</h3>
+                    <p>See the full list of Material talks and tutorials launching at I/O 2023</p></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="contai">
+        <h2>News & launches</h2>
+        <div class="body1">
+            <div class="col2" >
+            <div class="col1">
+                <img src="https://i.pinimg.com/564x/be/af/25/beaf2572be54ed3803d7859789adabc7.jpg" alt="4">
+            </div>
+            <a href="https://m3.material.io/develop/android/jetpack-compose">
+                <div class="cok">
+                    <h3>M3 for Jetpack Compose</h3>
+                    <p>With the latest stable release, use Jetpack Compose to build a complete M3 Android app</p></a>
+                </div>
+            </div>
+
+            <div class="col2" >
+                <div class="col1">
+                    <img src="https://i.pinimg.com/564x/f2/32/92/f232922a636a3edc668c657c582baff4.jpg" alt="5">
+                </div>
+                <a href="https://m3.material.io/components/carousel/overview">
+                    <div class="cok">
+                        <h3>New component: M3 carousel</h3>
+                        <p>An expressive new component for displaying scrollable collections of content</p></a>
+                    </div>
+                </div>
+            
+            <div class="col2" >
+            <div class="col1">
+                <img src="https://i.pinimg.com/564x/a4/c1/20/a4c120f8189651b821ce9cae469d0f36.jpg" alt="6">
+            </div>
+            <a href="https://m3.material.io/foundations/interaction/gestures">
+                <div class="cok">
+                    <h3>Back navigation & gestures</h3>
+                    <p>Explore new motion and gesture capabilities for smooth navigation across screens</p></a>
+                </div>
+            </div>
+        </div>
+        <p>
+
+
+        </p>
+        <div class="body1">
+            <div class="col2" >
+                <div class="col1">
+                <img src="https://i.pinimg.com/564x/e4/cf/8c/e4cf8cb5e021283743e759e61e2e85b4.jpg" alt="7">
+                </div>
+                <a href="https://m3.material.io/styles/motion/overview">
+                    <div class="cok">
+                        <h3>Motion system updates</h3>
+                        <p>Get started applying motion, from ready-to-use transition patterns to updated guidance</p></a>
+                    </div>
+            </div>
+    
+            <div class="col2" >
+                <div class="col1">
+                <img src="https://i.pinimg.com/564x/8b/2c/a2/8b2ca22c8165167a609a1b93be79e656.jpg" alt="8">
+                </div>
+                <a href="https://goo.gle/material-theme-builder-figma">
+                    <div class="cok">
+                        <h3>Material Theme Builder</h3>
+                        <p>Easily migrate or get started with the M3 color system and dynamic color</p></a>
+                    </div>
+            </div>
+                
+            <div class="col2" >
+                <div class="col1">
+                <img src="https://i.pinimg.com/564x/16/b9/0e/16b90ea497ef6f04bdbc6399bc220d65.jpg" alt="9">
+                </div>
+                <a href="https://m3.material.io/styles/color/overview">
+                    <div class="cok">
+                        <h3>New color guidance for tones</h3>
+                        <p>Updates include tone-based surface colors, contrast modes, and fixed accent colors</p></a>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="contai">
+        <h2>Resources</h2>
+        <div class="body1">
+            <div class="col3" >
+                <a href="https://material.io/blog">
+                    <div class="cok">
+                        <h3>Material blog</h3>
+                        <p>News, tutorials, and inspiration from the Material team</p></a>
+                    </div>
+                </div>
+        
+            <div class="col3" >
+                <a href="https://www.figma.com/community/file/1035203688168086460">
+                    <div class="cok">
+                        <h3>Figma design kit</h3>
+                        <p>Customizable styles and components to help you design with Material 3</p></a>
+                    </div>
+                </div>
+        </div>
+        <p>
+
+
+        </p>
+        <div class="body1">
+            <div class="col3" >
+                <a href="https://m3.material.io/get-started">
+                    <div class="cok">
+                        <h3>Get started</h3>
+                        <p>Guides, videos, and tools to start building with Material</p></a>
+                    </div>
+                </div>
+        
+            <div class="col3" >
+                <a href="https://m3.material.io/develop">
+                    <div class="cok">
+                        <h3>Develop</h3>
+                        <p>Code and developer documentation for Android, Flutter, and the Web</p></a>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <hr>
+    <div class="contay">
+        <div class="body1">
+        <div class="col4" >
+            <img src="https://m3.material.io/" alt="logo"><br>
+            <p>Material Design is an adaptable system of guidelines, components, and tools that support the best practices of user interface design. Backed by open-source code, Material Design streamlines collaboration between designers and developers, and helps teams quickly build beautiful products.</p>
+        </div>
+        <div class="col5" >
+            <p><b>Social</b></p>
+            <a href="https://www.github.com/material-components">GitHub</a><br>
+            <a href="https://www.twitter.com/materialdesign">Twitter</a><br>
+            <a href="https://www.youtube.com/materialdesign">YouTube</a><br>
+            <a href="https://material.io/feed.xml">Blog RSS</a>
+        </div>
+        <div class="col5" >
+            <p><b>Libraries</b></p>
+            <a href="https://m3.material.io/develop/android/mdc-android">Android</a><br>
+            <a href="https://m3.material.io/develop/android/jetpack-compose">Compose</a><br>
+            <a href="https://m3.material.io/develop/flutter">Flutter</a><br>
+            <a href="https://m3.material.io/develop/web">Web</a>
+        </div>
+        <div class="col6" >
+            <p><b>Archived versions</b></p>
+            <a href="https://m1.material.io/">Material Design 1</a><br>
+            <a href="https://m2.material.io/">Material Design 2</a>
+        </div>
+        </div>
+    </div>
+    <div class="contai">
+        <div class="body2">
+        <div class="col8" ><a href="https://www.google.com/"><b>Google</b></a></div>
+        <div class="col8" ><a href="https://policies.google.com/privacy">Privacy policy</a></div>
+        <div class="col8" ><a href="https://policies.google.com/terms">Terms of Service</a></div>
+        <div class="col8" ><a href="https://google.qualtrics.com/jfe/form/SV_3NMIMtX0F2zkakR?utm_source=Website&Q_Language=en&utm_campaign=Q2&campaignDate=June2022&referral_code=UXRgbtM2422655&productTag=b2d">Join research studies</a></div>
+        <div class="col8" ><a href="javascript:void(0)">Feedback</a></div>
+        </div>
+    </div>
+</body>
+</html>
+</div>
+
+</body>
+</html>
+
+

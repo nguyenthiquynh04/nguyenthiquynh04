@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: white;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(65, 181, 204);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.selector {
+  border-radius: 30px;
+  border: 1px solid hsla(0,0%,100%,.3);
+
+}
+
+li a:hover {
+  background-color: rgb(86, 154, 167);
+}
+.image {
+      width: 300px;
+    }
+
+.fakeimg {
+  width: 80%;
+  padding: 10px;
+}
+.card {
+  padding: 20px;
+  margin-right: 20px;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.leftcolumn {   
+  float: right;
+  width: 43%;
+  padding:20px;
+}
+
+/* Right column */
+.rightcolumn {
+  float: right;
+  width: 43%;
+  background-color: white;
+  padding: 30px;
+}
+.footer {
+  padding: 10px;
+  text-align: left;
+  background: rgb(59, 136, 196);
+  margin-top: 50px;
+}
+img {
+  height: 300px;
+}
+.image-container {
+  display: inline-block;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.image-container img {
+  transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+  transform: scale(1.1);
+}
+.text-container {
+  margin-left: 20px;
+}
+.image-container1 {
+            display: flex;
+            justify-content: space-between;
+            flex: 1;
+            margin-right: 0;
+        }
+        .image-container1 img {
+            width: 33.33%;
+            height: auto;
+        }
+        .image-container1 img {
+            transition: transform 0.3s ease;
+        }
+        .image-container1:hover img {
+            transform: scale(1.1);
+        }
+        .text-container1 {
+            float: left;
+            width: 33.33%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .container1 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+
+        .image {
+            width: 100%;
+            height: auto;
+        }
+
+        .caption {
+            font-family: Arial;
+            text-align: center;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .description {
+            text-align: center;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+a {
+    color: black;
+    font-size: 24px;
+    text-decoration: none;
+  }
+
+a:hover {
+    color: rgb(59, 136, 196);
+}
+.title {
+  font-size: 16px;
+  color: black;
+  /*Thêm các thuộc tính CSS khác mà bạn muốn áp dụng cho lớp "title"*/
+}
+.hover-text {
+  color: rgb(231, 59, 59); /* Màu chữ mặc định */
+}
+
+.hover-text:hover {
+  color: rgb(59, 136, 196); /* Màu chữ khi hover */
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<ul>
+  <li><a class="active" href="#nong">NÓNG</a></li>
+  <li><a href="https://baomoi.com/tin-moi.epi">MỚI</a></li>
+  <li><a href="https://baomoi.com/tin-video.epi">VIDEO</a></li>
+  <li><a href="https://baomoi.com/chu-de.epi">CHỦ ĐỀ</a></li>
+  <li><div class="selector"><a href="https://baomoi.com/nang-luong-tich-cuc-top338.epi">#Năng lượng tích cực</a></li></div>
+  <li><div class="selector"><a href="https://baomoi.com/kham-pha-viet-nam-top335.epi">#Khám phá Việt Nam</a></li></div>
+  <li><div class="selector"><a href="https://baomoi.com/kham-pha-the-gioi-top363.epi">#Khám phá thế giới</a></li></div>
+</ul>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+        <div class="fakeimg">
+          <div class="image-container">
+            <img src="https://photo-baomoi.bmcdn.me/w100_r1x1/2023_11_20_294_47578494/a83205c81484fddaa495.jpg.webp" alt="" style="height:60px;">
+            <div class="text-container">
+              <a href="https://baotintuc.vn/thoi-su/tong-bi-thu-nguyen-phu-trong-du-phien-hop-sang-2011-ky-hop-thu-6-quoc-hoi-khoa-xv-20231120092215672.htm" target="_blank" class="title">Tổng Bí thư Nguyễn Phú Trọng dự phiên họp sáng 20/11, Kỳ họp thứ 6 Quốc hội khóa XV</a>
+            </div>
+          </div>
+          </div>
+        <div class="fakeimg">
+          <div class="image-container">
+            <img src="https://photo-baomoi.bmcdn.me/w100_r1x1/2023_12_06_15_47740536/6ac7f88afec617984ed7.jpg" alt="" style="height:60px;">
+            <div class="text-container">
+              <a href="https://nld.com.vn/truy-tim-2-pham-nhan-tron-khoi-trai-giam-xuan-ha-196231206220526395.htm" target="_blank" class="title">Truy tìm 2 phạm nhân trốn khỏi trại giam Xuân Hà</a> 
+            </div>
+          </div> 
+        </div>
+        <div class="fakeimg">
+          <div class="image-container">
+            <img src="https://photo-baomoi.bmcdn.me/w100_r1x1/2023_12_06_15_47740576/0d190c550a19e347ba08.jpg.webp" alt="" style="height:60px;">
+            <div class="text-container">
+              <a href="https://nld.com.vn/thu-thanh-filip-nguyen-nhap-quoc-tich-viet-nam-thanh-cong-196231206225903912.htm" target="_blank" class="title">Thủ thành Filip Nguyễn nhập quốc tịch Việt Nam thành công</a> 
+            </div>
+          </div> 
+        </div>
+        <div class="fakeimg">
+          <div class="image-container">
+            <img src="https://photo-baomoi.bmcdn.me/w100_r1x1/2023_12_06_15_47740577/8c56f71af15618084147.jpg.webp" alt="" style="height:60px;">
+            <div class="text-container">
+              <a href="https://nld.com.vn/trien-lam-nghe-thuat-tuong-tac-da-giac-quan-van-gogh-dau-tien-tai-viet-nam-chinh-thuc-don-cong-chung-196231206224309785.htm" target="_blank" class="title">Triển lãm nghệ thuật tương tác đa giác quan Van Gogh đầu tiên tại Việt Nam chính thức đón công chúng</a>  
+            </div>
+          </div> 
+        </div>
+        <div class="fakeimg">
+          <div class="image-container">
+            <img src="https://photo-baomoi.bmcdn.me/w100_r1x1/2023_12_06_294_47740572/8fc64d8a4bc6a298fbd7.jpg.webp" alt="" style="height:60px;">
+            <div class="text-container">
+              <a href="https://baotintuc.vn/an-ninh-trat-tu/xac-minh-vu-viec-mot-phong-vien-bi-hanh-hung-khi-tac-nghiep-20231206225134447.htm" target="_blank" class="title">Xác minh vụ việc một phóng viên bị hành hung khi tác nghiệp</a>  
+            </div>
+          </div> 
+        </div>
+        <div class="fakeimg">
+          <div class="image-container">
+            <img src="https://photo-baomoi.bmcdn.me/w100_r1x1/2023_12_06_8_47740595/382da07ea6324f6c1623.jpg.webp" alt="" style="height:60px;">
+            <div class="text-container">
+              <a href="https://hanoimoi.vn/tim-hieu-co-hoi-du-hoc-nghe-tai-australia-651210.html" target="_blank" class="title">Tìm hiểu cơ hội du học nghề tại Australia</a>   
+            </div>
+          </div>
+        </div>
+        <div class="fakeimg">
+          <div class="image-container">
+            <img src="https://photo-baomoi.bmcdn.me/w100_r1x1/2023_12_06_83_47740602/9645bf16b95a5004094b.jpg.webp" alt="" style="height:60px;">
+            <div class="text-container">
+              <a href="https://vtc.vn/duong-kim-vo-dich-cup-c1-chau-a-thua-nhan-ha-noi-fc-thang-xung-dang-ar838986.html" target="_blank" class="title">Đương kim vô địch cúp C1 châu Á thừa nhận Hà Nội FC thắng xứng đáng</a>   
+            </div>
+          </div>
+        </div>
+        <div class="fakeimg">
+          <div class="image-container">
+            <img src="https://photo-baomoi.bmcdn.me/w100_r1x1/2023_12_06_294_47740601/7d57b404b2485b160259.jpg.webp" alt="" style="height:60px;">
+            <div class="text-container">
+              <a href="https://baotintuc.vn/the-thao/khai-mac-giai-bong-ban-cac-cay-vot-xuat-sac-quoc-gia-nam-2023-20231206230313742.htm" target="_blank" class="title">Khai mạc giải bóng bàn các cây vợt xuất sắc quốc gia năm 2023</a>   
+            </div>
+          </div>
+        </div>
+        <div class="fakeimg">
+          <div class="image-container">
+            <img src="https://photo-baomoi.bmcdn.me/w100_r1x1/2023_12_06_114_47740609/caaa6cf86ab483eadaa5.jpg" alt="" style="height:60px;">
+            <div class="text-container">
+              <a href="https://plo.vn/cong-an-dep-diem-hut-chich-ma-tuy-o-nghia-trang-binh-hung-hoa-post765405.html" target="_blank" class="title">Công an dẹp điểm hút chích ma túy ở nghĩa trang Bình Hưng Hòa</a>   
+            </div>
+          </div>
+        </div>
+        <div class="fakeimg">
+          <div class="image-container">
+        <img src="https://baomoi-static.bmcdn.me/events/banner_hcm_02-min.png" alt="" style="height:250px">
+        <div class="text-container">
+        <a her="https://baomoi.com/chu-tich-ho-chi-minh/top/114.epi" target="_blank"></a>
+      </div>
+    </div>
+  </div>
+        <h1>VIDEO____________</h1>
+          <img src="https://photo-baomoi.bmcdn.me/w300_r1x1/2023_12_07_180_47749238/1fa89c3a9b7672282b67.jpg.webp" alt=""  style="height:250px">
+          <div class="text-container">
+            <a href="https://baomoi.com/sung-so-nai-sung-tam-trang-dep-nhu-than-thu-bat-ngo-xuat-hien-c47749238.epi" target="_blank" class="title">Sững sờ nai sừng tấm trắng đẹp<br>như thần thú bất ngờ xuất hiện</a> 
+          </div>
+          <img src="https://photo-baomoi.bmcdn.me/w300_r1x1/2023_12_07_329_47749655/eae5817c86306f6e3621.jpg.webp" alt=""  style="height:250px">
+          <div class="text-container">
+            <a href="https://baomoi.com/doan-hai-my-gay-sot-voi-clip-du-trend-tiktok-dan-mang-giong-doan-van-hau-doi-toc-gia-qua-c47749655.epi" target="_blank" class="title">Doãn Hải My 'gây sốt' với clip<br> đu trend TikTok,dân mạng:<br> 'Giống Đoàn Văn Hậu đội tóc giả quá'!</a> 
+          </div>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <div class="image-container">
+      <div class="fakeimg" style="height:300px;">
+        <img src="https://photo-baomoi.bmcdn.me/w700_r16x9/2023_12_06_30_47739114/47354b5a4d16a448fd07.jpg">
+    </div>
+      </div>
+      <a href="https://www.baogiaothong.vn/voi-de-xuat-bieu-gia-5-bac-tien-dien-se-tinh-nhu-the-nao-19223120618352603.htm" target="_blank">Với đề xuất biểu giá 5 bậc, tiền điện sẽ tính như thế nào?</a>
+    </div>
+        <div class="image-container1">
+          <figure>
+            <a href="https://baomoi.com/gia-xang-ron-95-giam-lan-thu-4-lien-tiep-c47746541.epi">
+                <img class="image" src="https://photo-baomoi.bmcdn.me/w250_r3x2/2023_12_07_23_47746541/91f7012e0662ef3cb673.jpg" alt=""  style="width:130px;height:100px">
+                <figcaption class="caption">Giá xăng RON 95 giảm lần thứ 4 liên tiếp</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="https://baomoi.com/hoi-dong-lien-bang-nga-an-dinh-ngay-tien-hanh-bau-cu-tong-thong-c47748234.epi">
+                <img class="https://photo-baomoi.bmcdn.me/w700_r1/2023_12_07_293_47748234/084dd1f2d6be3fe066af.jpg" alt=""  style="width:130px;height:100px">
+                <figcaption class="caption">Hội đồng Liên bang Nga ấn định ngày tiến hành bầu cử tổng thống</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="https://baomoi.com/chay-lon-tai-xuong-sua-chua-tau-thuyen-nhieu-tau-ca-bi-thieu-rui-c47748018.epi">
+                <img class="image" src="https://photo-baomoi.bmcdn.me/w250_r3x2_sm/2023_12_07_114_47748018/522966a361ef88b1d1fe.jpg.webp" alt=""  style="width:130px;height:100px">
+                <figcaption class="caption">Cháy lớn tại xưởng sửa chữa tàu thuyền, nhiều tàu cá bị thiêu rụi</figcaption>
+            </a>
+          </figure>
+        </div>
+        <div class="fakeimg">
+          <div class="image-container">
+            <img src="https://photo-baomoi.bmcdn.me/w250_r3x2/2023_12_07_274_47746931/8185b124b6685f360679.jpg.webp" alt=""  style="width:130px;height:100px">
+            <div class="text-container">
+              <a href="https://baomoi.com/dien-kremlin-noi-chien-thang-cua-nga-la-dieu-tat-yeu-tong-thong-biden-keu-goi-dung-de-ong-putin-thang-c47746931.epi" target="_blank" class="title">Điện Kremlin nói chiến thắng của Nga là điều tất yếu; Tổng thống Biden kêu gọi đừng để ông Putin thắng</a> 
+            </div>
+          </div> 
+        </div>
+        <div class="fakeimg">
+          <div class="image-container">
+            <img src="https://photo-baomoi.bmcdn.me/w250_r3x2/2023_12_07_83_47744674/89db332b3467dd398476.jpg.webp" alt=""  style="width:130px;height:100px">
+            <div class="text-container">
+              <a href="https://baomoi.com/csgt-co-duoc-giu-can-cuoc-cong-dan-cua-nguoi-vi-pham-c47744674.epi" target="_blank" class="title">CSGT có được giữ căn cước công dân của người vi phạm?</a> 
+            </div>
+          </div> 
+        </div>
+        <div class="fakeimg">
+          <div class="image-container">
+            <img src="https://photo-baomoi.bmcdn.me/w250_r3x2_sm/2023_12_07_603_47747452/892c458242ceab90f2df.jpg.webp" alt=""  style="width:130px;height:100px">
+            <div class="text-container">
+              <a href="https://baomoi.com/man-city-thi-dau-bet-bat-hlv-guardiola-gay-bat-ngo-doat-cu-an-3-roi-giai-nghe-c47747452.epi" target="_blank" class="title">Man City thi đấu bết bát, HLV Guardiola gây bất ngờ: Đoạt cú ăn 3 rồi giải nghệ?</a> 
+            </div>
+          </div> 
+        </div>
+        <a href="#"  class="hover-text">NĂNG LƯỢNG TÍCH CỰC</a>
+        <div class="fakeimg">
+          <div class="image-container">
+            <img src="https://photo-baomoi.bmcdn.me/w250_r3x2/2023_12_06_293_47735183/62432d9a2bd6c2889bc7.jpg.webp" alt=""  style="width:130px;height:100px">
+            <div class="text-container">
+              <a href="https://baomoi.com/xac-lap-10-ky-luc-chau-a-moi-ve-am-thuc-va-qua-tang-dac-san-viet-nam-c47735183.epi" target="_blank" class="title">Xác lập 10 Kỷ lục châu Á mới về ẩm thực và quà tặng đặc sản Việt Nam</a> 
+            </div>
+          </div> 
+        </div>
+        <div class="fakeimg">
+          <div class="image-container">
+            <img src="https://photo-baomoi.bmcdn.me/w300_r3x2/2023_12_05_236_47729522/8fbe9bec9ea077fe2eb1.jpg.webp" alt=""  style="width:130px;height:100px">
+            <div class="text-container">
+              <a href="https://baomoi.com/anh-binh-oxy-het-long-vi-benh-nhan-ngheo-c47729522.epi" target="_blank" class="title">Anh Bình oxy: Hết lòng vì bệnh nhân nghèo</a>
+            </div>
+          </div> 
+        </div>
+        <a href="https://baomoi.com/nang-luong-tich-cuc-top338.epi">Xem Tất Cả</a><br>
+        <a href="#"  class="hover-text">KHÁM PHÁ VIỆT NAM</a>
+        <div class="fakeimg">
+          <div class="image-container">
+            <img src="https://photo-baomoi.bmcdn.me/w250_r3x2/2023_12_07_425_47745931/467b40b547f9aea7f7e8.jpg.webp" alt=""  style="width:130px;height:100px">
+            <div class="text-container">
+              <a href="https://baomoi.com/thuc-day-tren-thao-nguyen-co-hong-c47745931.epi" target="_blank" class="title">Thức dậy trên thảo nguyên cỏ hồng</a> 
+            </div>
+          </div> 
+        </div>
+        <div class="fakeimg">
+          <div class="image-container">
+            <img src="https://photo-baomoi.bmcdn.me/w300_r3x2/2023_12_07_23_47743806/de5aef39e875012b5864.jpg.webp" alt=""  style="width:130px;height:100px">
+            <div class="text-container">
+              <a href="https://baomoi.com/lac-vao-co-tich-tren-cung-duong-chinh-phuc-ngon-nui-hiem-tro-nhat-tay-bac-c47743806.epi" target="_blank" class="title">'Lạc vào cổ tích' trên cung đường chinh phục ngọn núi hiểm trở nhất Tây Bắc</a>
+            </div>
+          </div> 
+        </div>
+        <div class="fakeimg">
+          <div class="image-container">
+            <img src="https://photo-baomoi.bmcdn.me/w300_r3x2/2023_12_07_83_47744640/1e39e2f1e5bd0ce355ac.jpg.webp" alt=""  style="width:130px;height:100px">
+            <div class="text-container">
+              <a href="https://baomoi.com/me-man-truoc-nhung-thac-nuoc-dep-o-viet-nam-c47744640.epi" target="_blank" class="title">Mê mẩn trước những thác nước đẹp ở Việt Nam</a>
+            </div>
+          </div> 
+        </div>
+        <a href="https://baomoi.com/kham-pha-viet-nam-top335.epi">Xem Tất Cả</a><br>
+        <h1 style="text-align:center;">
+          <a href="https://baomoi.com/" >XEM TẤT CẢ</a>
+        </h1>
+</div>
+  </div>
+</div>
+<div class="footer">
+  <h2>BÁO MỚI</h2>
+</div>
+
+
+</body>
+</html>
