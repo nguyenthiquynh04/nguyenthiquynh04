@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bài 30%</title>
+        <link rel="stylesheet" herf="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css2?family=Water+Brush&display=swap" rel="stylesheet">
+        <style>
+            body {
+        background-color: white;
+        margin: 0;
+        padding: 0;
+        font-family: "Times New Roman";
+    }
+    .body1{
+        font-family: 'Dancing Script', cursive;
+    }
+    .container {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .container img {
+      display: block;
+      max-width: 100%;
+    }
+    
+    .bo1 {
+      position: absolute;
+      top: 5%;
+      left: 50%;
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  color: rgb(32, 184, 211);
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgb(32, 184, 211);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.container1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+.column1 {
+    padding: 10px;
+      box-sizing: border-box;
+    }
+    
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    .item {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    }
+    .container2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    
+    .column2 {
+      box-sizing: border-box;
+      background-color: #443d50;
+      text-align: center;
+    }
+    .container3 {
+      display: flex;
+      align-items: center;
+    }
+    
+    .image1 {
+      flex: 0 0 auto;
+    }
+    
+    .text1 {
+      flex: 1 1 auto;
+    }
+    .container4 {
+      display: flex;
+      align-items: center;
+    }
+    
+    .image2 {
+      flex: 0 0 auto;
+      margin-left: 20px;
+    }
+    
+    .text2 {
+      flex: 1 1 auto;
+    }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+        <img src ="c:\Users\admin\Downloads\Anh1.jpg" all="" style="width:1480px;height:500px;">
+        <div class="topnav">
+            <div class="bo1">
+            <ul>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Home</a>
+                <div class="dropdown-content" >
+                  <a href="#">Home 1</a>
+                  <a href="#">Home 2</a>
+                  <a href="#">Home 3</a>
+                </div>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Menu</a>
+                    <div class="dropdown-content" >
+                      <a href="#">Piza</a>
+                      <a href="#">Salad</a>
+                      <a href="#">Mì Ý</a>
+                      <a href="#">Đồ uống</a>
+                      <a href="#">Combo</a>
+                      
+
+                    </div>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Our Story</a>
+                        <div class="dropdown-content" >
+                          <a href="#">Home 1</a>
+                          <a href="#">Home 2</a>
+                          <a href="#">Home 3</a>
+                        </div>
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropbtn">Contact Us</a>
+                            <div class="dropdown-content" >
+                              <a href="#">Home 1</a>
+                              <a href="#">Home 2</a>
+                              <a href="#">Home 3</a>
+                            </div>
+                            <input type="text" class="search-input" placeholder="Search">
+                    </ul>
+        </div>
+    </div>
+    <div class="item">
+        <div class="body1">
+        <h2>Lorem Ipsum Dolor<br></h2>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+        Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+    <div class="container1">
+    <div class="column1">
+        <img src="c:\Users\admin\Downloads\anhh1.jpg" alt="" style="width:400px;">
+        <h3>Lorem ipsum</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing...</p>
+      </div>
+      <div class="column">
+        <img src="c:\Users\admin\Downloads\anhh2.jpg" alt="" style="width:400px;">
+        <h3>Lorem ipsum</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing...</p>
+      </div>
+      <div class="column">
+        <img src="c:\Users\admin\Downloads\anhh2.jpg" alt="" style="width:400px;">
+        <h3>Lorem ipsum</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing...</p>
+      </div>
+    </div>
+    <div class="container2">
+        <div class="column2">
+          <p>Lorem imsum dorlor sit amet consectetur adpisicing elit sed do eiusmod tempor incididunt ut labore et dolore magan aliqua .Us emunt ad minim veiam,...</p>
+        </div>
+        <div class="column2">
+        <p>Lorem imsum dorlor sit amet consectetur adpisicing elit sed do eiusmod tempor incididunt ut labore et dolore magan aliqua .Us emunt ad minim veiam,...</p>
+        </div>
+      </div>
+      <div class="container3">
+        <div class="image1">
+          <img src="c:\Users\admin\Downloads\anhh1.jpg" alt="" style="width:400px;">
+        </div>
+        <div class="text1">
+            <h3>Dicount up to 50% all Excurtions</h3>
+          <p></p>
+        </div>
+      </div>
+      <div class="container4">
+        <div class="text2">
+            <h3>Januarys Promo :Buy 1 get 1 free</h3>
+          <p></p>
+        </div>
+        <div class="image2">
+          <img src="c:\Users\admin\Downloads\anhh2.jpg"alt="" style="width:400px;">
+        </div>
+      </div>
+    </body>
+</html>
