@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+ body {
+        background-color: white;
+        margin: 0;
+        padding: 0;
+    }
+    .body1{
+        font-family: 'Dancing Script', cursive;
+    }
+    .container {
+      position: relative;
+      display: inline-block;
+    }
+    .container img {
+      display: block;
+      max-width: 100%;
+    }
+    .bo1 {
+      position: absolute;
+      top: 5%;
+      left: 50%;
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .container {
+      position: relative;
+      color: black;
+    }
+
+    /* Định nghĩa kiểu cho gạch chân */
+    .dropdown::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 100%;
+      height: 2px;
+      background-color: white;
+      transform: scaleX(0);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    /* Định nghĩa kiểu cho văn bản khi hover */
+    .dropdown:hover::after {
+      transform: scaleX(1);
+    }
+.dropbtn {
+  padding: 16px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  color:white;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: 10px;
+}
+
+.dropdown-content a {
+  font-size: 16px;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-decoration: none;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.background-image {
+      background-image: url("https://i.pinimg.com/564x/f7/df/d9/f7dfd9758bec9eecb884cb184b62f151.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 1190px;
+      width: 100%;
+      position: relative;
+    }
+
+    .overlay-image {
+      background-image: url('https://demo.kaliumtheme.com/fashion/wp-content/uploads/2016/12/home_slider_1.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100%;
+      width: 100%;
+      right:22%;
+      position: absolute;
+    }
+    .text-image {
+      position:absolute;
+      margin-left: 850px;
+      top :300px;
+      color:white;
+      font-size: 30px;
+    }
+    .abs{
+      text-align: center;
+    }
+    .container1 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      margin-left: 80px;
+      margin-right: 80px;
+    }
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .item img {
+      width: 80%;
+      height: auto;
+    }
+    .caption {
+      margin-top: 5px;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .caption span {
+      flex: 1;
+      text-align: center;
+    }
+    img:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+  </style>
+<body>
+    <div class="container">
+      <div class="background-image">
+        <div class="overlay-image"></div>
+        <img src ="https://i.pinimg.com/564x/f7/df/d9/f7dfd9758bec9eecb884cb184b62f151.jpg" all="" style="width:1480px;height:700px;">
+        <div class="text-image">
+          <h1>Fall And Winner<br>Coat Collection</h1>
+          <p>The latest collection from the British brands<br>Pre-order now and get your order this Dercember </p>
+        </div>
+            <div class="bo1">
+                    <div class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Home</a>
+                        <div class="dropdown-content">
+                        <a href="#">Home FullScreen</a>
+                        <a href="#">Home Parallax</a>
+                        </div>
+                    </div>
+                    <div class="dropdown"  style="margin-left:10px;">
+                        <a href="javascript:void(0)" class="dropbtn">Shop</a>
+                        <div class="dropdown-content">
+                        <a href="#">Women</a>
+                        <a href="#">Men</a>
+                        <a href="#">Shoes</a>
+                        <a href="#">Accessories</a>
+                        <a href="#">Variants</a>
+                        <a href="#">Pagination</a>
+                        <a href="#">Cart Icons</a>
+                        </div>
+                    </div>
+                    <div class="dropdown"  style="margin-left:10px;">
+                        <a href="javascript:void(0)" class="dropbtn" style="margin-left:10px">Produck</a>
+                        <div class="dropdown-content">
+                        <a href="#">Simple Produck</a>
+                        <a href="#">Variable Produck</a>
+                        <a href="#">External Produck</a>
+                        <a href="#">Grouped Produck</a>
+                        <a href="#">Cata log Mode</a>
+                        <a href="#">Image Layout</a>
+                        <a href="#">Image Sizes</a>
+                        </div>
+                    </div>
+                    <div class="dropdown"  style="margin-left:10px;">
+                      <a href="javascript:void(0)" class="dropbtn" style="margin-left:10px">News</a>
+                      <div class="dropdown-content">
+                      <a href="#">SideBar Right</a>
+                      <a href="#">Sidebar Left</a>
+                      </div>
+                  </div>
+                  <div class="dropdown"  style="margin-left:10px;">
+                    <a href="javascript:void(0)" class="dropbtn" style="margin-left:10px">Pages</a>
+                    <div class="dropdown-content">
+                    <a href="#">Abount</a>
+                    <a href="#">contact</a>
+                    <a href="#">Checkout</a>
+                    <a href="#">Login/Regiter</a>
+                    </div>
+                </div>
+                <div class="dropdown"  style="margin-left:10px;">
+                  <a href="javascript:void(0)" class="dropbtn" style="margin-left:10px">Buy Now</a>
+                  <div class="dropdown-content">
+                  </div>
+              </div>
+            </div>
+      </div>
+    </div>
+    <div class="abs"><h3>New Arivals</h3><p>Latest From our Store</p></div>
+    <div class="container1">
+      <div class="item">
+        <img src="https://demo.kaliumtheme.com/fashion/wp-content/uploads/2016/11/broken_2-820x1016.jpg" alt="Ảnh 1">
+        <div class="caption">
+          <span><h3>Broken T Shirt</h3></span>
+          <span><h3>$9</h3></span>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://demo.kaliumtheme.com/fashion/wp-content/uploads/2016/11/knickerboxer_1-820x1016.jpg" alt="Ảnh 2">
+        <div class="caption">
+        <span><h3>Knickerboxer</h3></span>
+          <span><h3>$25</h3></span>
+      </div>
+      </div>
+      <div class="item">
+        <img src="https://demo.kaliumtheme.com/fashion/wp-content/uploads/2016/11/studio_belt_4-820x1016.jpg" alt="Ảnh 3">
+        <div class="caption">
+          <span><h3>Studio Belt</h3></span>
+          <span><h3>$7</h3></span>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://demo.kaliumtheme.com/fashion/wp-content/uploads/2016/11/chambray_shirt_1-820x1016.jpg" alt="Ảnh 4">
+        <div class="caption">
+          <span><h3>Chambray Shirt</h3></span>
+          <span><h3>$29</h3></span>
+        </div>
+      </div>   
+</body>
+</head>

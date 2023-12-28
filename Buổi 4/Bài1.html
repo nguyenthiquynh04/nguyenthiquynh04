@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+ body {
+        background-color: white;
+        margin: 0;
+        padding: 0;
+    }
+.black-background{
+background-color: black;
+color :#fcfdfd;
+padding: 23px;
+margin :0;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  color: rgb(32, 184, 211);
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown select {
+  width: 400px; /* Định nghĩa chiều rộng của thanh thả xuống */
+  display: grid; /* Sử dụng grid */
+  grid-template-columns: repeat(4, 1fr); /* Chia thành 4 cột bằng nhau */
+  grid-auto-rows: min-content; /* Chiều cao tự động */
+}
+
+.dropdown select option {
+  width: 100%; /* Chiếm toàn bộ chiều rộng của cột */
+}
+ul.dropdownt-content {
+  display: none;
+  font-size: 13px;
+  list-style: none;
+  position: absolute;
+  background-color: #1f1f1f;
+  width: 950px;
+  border: 1px solid #5a5a5a;
+  padding: 0;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 10px;
+}
+
+ul.dropdownt-content a {
+  color: rgb(184, 183, 183);
+  padding: 8px 13px;
+ text-decoration: none;
+}
+ul.dropdown ul.dropdownt-content{
+  right:30px;
+  }
+ul.dropdownt-content li:hover > a {
+  color: #0dc0c0;
+}
+
+ul.dropdownt-content li:last-child a {
+  border: none;
+}
+.dropdown > li:hover > ul.dropdownt-content {
+  display: grid;
+}
+
+ul.dropdownt-content li:hover > a {
+  color: #0dc0c0;
+  background-color: #504f4f;
+}
+
+ul.dropdownt-content li:last-child a {
+  border: none;
+}
+img {
+margin-top: 20px;
+width :1500px;
+height :600px;
+}
+b{
+  margin-left:350px;
+}
+.column {
+    flex: 1 40%;
+    padding: 5px;
+  }
+</style>
+</head>
+<body>
+    <div class="black-background">
+      <i class="fa fa-phone-square" style="font-size:24px;color:rgb(143, 191, 194);margin-left:150px;"></i>  Call Us : +7.906.229.2627
+      <i class="fa fa-envelope-square" style="font-size:24px;color:rgb(143, 191, 194);margin-left:20px;"></i> Email : hello@pitheme.com 
+      <b>Follow Us :</b>
+      <i class="fa fa-twitter-square" style="font-size:24px;color:rgb(143, 191, 194);margin-left:20px;"></i>
+      <i class="fa fa-facebook-square" style="font-size:24px;color:rgb(143, 191, 194);margin-left:20px;"></i>
+      <i class="fa fa-chrome" style="font-size:24px;color:rgb(143, 191, 194);margin-left:20px;"></i>
+    </div>
+<ul>
+  <li class="dropdown">
+    <img src="https://aurum.nikadevs.com/img/logo-base.png" style="width:30px;height:30px;margin-top: 20px;margin-left:200px;">
+    <a href="#" class="dropbtn" style="margin-left: 600px ;margin-top: 20px;">Home</a>
+    <div class="dropdown-content" style="margin-left: 800px ;" >
+      <a href="https://aurum.nikadevs.com/index.html">Home 1</a>
+      <a href="https://aurum.nikadevs.com/home-home-2.html">Home 2</a>
+      <a href="https://aurum.nikadevs.com/home-home-3.html">Home 3</a>
+      <a href="https://aurum.nikadevs.com/home-home-4.html">Home 4</a>
+      <a href="https://aurum.nikadevs.com/home-home-5.html">Home 5</a>
+      <a href="https://aurum.nikadevs.com/home-home-6.html">Home 6</a>
+      <a href="https://aurum.nikadevs.com/home-home-7.html">Home 7</a>
+      <a href="https://aurum.nikadevs.com/home-home-8.html">Home 8</a>
+      <a href="https://aurum.nikadevs.com/home-home-9.html">Home 9</a>
+      <a href="https://aurum.nikadevs.com/home-home-10.html">Home 10</a>
+      <a href="https://aurum.nikadevs.com/home-onepage-1.html">Onepage 1</a>
+      <a href="https://aurum.nikadevs.com/home-onepage-2.html">Onepage 2</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn" style="margin-top: 20px;">Features</a>
+    <div class="dropdown-content">
+      <a href="https://aurum.nikadevs.com/headers-headers-light.html">Headers</a>
+      <a href="">Footers</a>
+      <a href="#">Utility</a>
+      <a href="#">Typography</a>
+      <a href="#">Animations</a>
+      <a href="#">Icons</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn" style="margin-top: 20px;">Templates</a>
+    <div class="dropdown-content" style="right:20%;">
+      <div class="ul.dropdownt-content">
+        <div style="display: flex;">
+          <div class="column"style="width:500px;">
+                <a href="https://aurum.nikadevs.com/about-about-2.html">About Company 2</a>
+                <a href="https://aurum.nikadevs.com/about-about-3.html">About Company 3</a>
+                <a href="https://aurum.nikadevs.com/about-about-4.html">About Company 4</a>
+                <a href="https://aurum.nikadevs.com/services-services-1.html">Services 1</a>
+                <a href="https://aurum.nikadevs.com/services-services-2.html">Services 2</a>
+                <a href="https://aurum.nikadevs.com/services-services-3.html">Services 3</a>
+                <a href="https://aurum.nikadevs.com/services-services-4.html">Services 4</a>
+                <a href="https://aurum.nikadevs.com/services-services-5.html">Services 5</a>
+                <a href="https://aurum.nikadevs.com/services-services-6.html">Services 6</a>
+                <a href="https://aurum.nikadevs.com/services-services-7.html">Services 7</a>
+                <a href="https://aurum.nikadevs.com/services-services-8.html">Services 8</a>
+                <a href="https://aurum.nikadevs.com/services-services-9.html">Services 9</a>
+                <a href="https://aurum.nikadevs.com/services-services-10.html">Services 10</a>
+                <a href="https://aurum.nikadevs.com/services-services-11.html">Services 11</a>
+          </div>
+          <div class="column">
+                <a href="https://aurum.nikadevs.com/clients-clients-1.html">Clients 1</a>
+                <a href="https://aurum.nikadevs.com/clients-clients-2.html">Clients 2</a>
+                <a href="https://aurum.nikadevs.com/clients-clients-3.html">Clients 3</a>
+                <a href="https://aurum.nikadevs.com/clients-clients-4.html">Clients 4</a>
+                <a href="https://aurum.nikadevs.com/clients-clients-5.html">Clients 5</a>
+                <a href="https://aurum.nikadevs.com/clients-clients-6.html">Clients 6</a>
+                <a href="https://aurum.nikadevs.com/clients-clients-7.html">Clients 7</a>
+                <a href="https://aurum.nikadevs.com/portfolio-portfolio-1.html">Portfolio Classic 1</a>
+                <a href="https://aurum.nikadevs.com/portfolio-portfolio-2.html">Portfolio Classic 2</a>
+                <a href="https://aurum.nikadevs.com/portfolio-portfolio-3.html">Portfolio Classic 3</a>
+                <a href="https://aurum.nikadevs.com/portfolio-portfolio-4.html">Portfolio Classic 4</a>
+                <a href="https://aurum.nikadevs.com/portfolio-portfolio-5.html">Portfolio Classic 5</a>
+                <a href="https://aurum.nikadevs.com/portfolio-portfolio-6.html">Portfolio Classic 6</a>
+                <a href="https://aurum.nikadevs.com/portfolio-portfolio-7.html">Portfolio Classic 7</a>
+                <a href="https://aurum.nikadevs.com/portfolio-portfolio-8.html">Portfolio Classic 8</a>
+          </div>
+          <div class="column">
+            <a href="#">Portfolio Classic 9</a>
+            <a href="#">Portfolio Classic 10</a>
+            <a href="#">Portfolio Masonry 1</a>
+            <a href="#">Portfolio Masonry 2</a>
+            <a href="#">Portfolio Timeline</a>
+            <a href="#">Portfolio Single</a>
+            <a href="#">Blog Masonry Wide</a>
+            <a href="#">Blog Masonry + Sidebar</a>
+            <a href="#">Blog Timeline Wide</a>
+            <a href="#">Blog Timeline + Sidebar</a>
+            <a href="#">Blog Large Image</a>
+            <a href="#">Blog Medium Image</a>
+            <a href="#">Blog Small Image</a>
+            <a href="#">Blog Single Posst</a>
+            <a href="#">Team 1</a>
+          </div>
+          <div class="column">
+            <a href="#">Team 2</a>
+            <a href="#">Team 3</a>
+            <a href="#">Testimonials 1</a>
+            <a href="#">Testimonials 2</a>
+            <a href="#">FQA 1</a>
+            <a href="#">FQA 2</a>
+            <a href="#"> Contact 1</a>
+            <a href="#">Contact 2</a>
+            <a href="#">Layouts Fixed fluid</a>
+            <a href="#">Layouts fluid Fixed</a>
+            <a href="#">Layouts Fixed fluid fixed</a>
+            <a href="#">Sign In</a>
+            <a href="#">Sign Up</a>
+            <a href="#">404</a>
+            <a href="#">500</a>
+          </div>
+        </div>
+    </div>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn" style="margin-top: 20px;">Elements</a>
+    <div class="dropdown-content"style="right:20%;">
+      <div style="display: flex;">
+        <div class="column"style="width:400px;">
+      <a href="#">Tiltebars - Breadcrumb Right</a>
+      <a href="#">Tiltebars - Breadcrumb Top</a>
+      <a href="#">Tiltebars - Big Breadcrumb Right</a>
+      <a href="#">Tiltebars - Big Breadcrumb Top</a>
+      <a href="#">Tiltebars - Only Breadcrumb</a>
+      <a href="#">Icon Boxes Horizontal</a>
+      <a href="#">Icon Boxes Vertical</a>
+      <a href="#">Lists Simple</a>
+      <a href="#">Lists Icons</a>
+    </div>
+    <div class="column">
+      <a href="#">Lists Groups</a>
+      <a href="#">Lists Image</a>
+      <a href="#">Socials Complex Small</a>
+      <a href="#">Socials Complex</a>
+      <a href="#">Socials Complex Big</a>
+      <a href="#">Socials Simple</a>
+      <a href="#">Counters Numbers</a>
+      <a href="#">Counters Progress Bars</a>
+      <a href="#">Tabs</a>
+    </div>
+    <div class="column">
+      <a href="#">Tabs Big</a>
+      <a href="#">Tables</a>
+      <a href="#">Accordions</a>
+      <a href="#">Alert Boxes</a>
+      <a href="#">Boxes</a>
+      <a href="#">Buttons</a>
+      <a href="#">Forms</a>
+      <a href="#">Slider</a>
+      <a href="#">Google Maps Roadmap</a>
+    </div>
+    <div class="column">
+      <a href="#">Google Maps Grey style</a>
+      <a href="#">Google Maps Dark style</a>
+      <a href="#">Google Maps Satellite</a>
+      <a href="#">Google Maps Hybrid</a>
+      <a href="#">Images</a>
+      <a href="#">Pricing Tables</a>
+      <a href="#">Sections</a>
+      <a href="#">Simple</a>
+      <a href="#">With Photo</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" style="margin-top: 20px;">Docs</a>
+    <div class="dropdown-content">
+      <a href="#">Docs Map</a>
+      <a href="#">Quick Start Guide</a>
+      <a href="#">Credits</a>
+      <a href="#">Changelog</a>
+      <a href="#">Theme Structure</a>
+      <a href="#">Theme Settings</a>
+    </div>
+  </li>
+</ul>
+<img src="https://demo.kaliumtheme.com/agency/wp-content/uploads/2021/05/adestra-c-300x200.jpg">
+</body>
+</html>
