@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Đăng ký</title>
+  <style>
+    body {
+      border: 2px solid black;
+      padding: 20px;
+      margin-top : 150px;
+      margin-left : 500px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <h2>Form Đăng ký</h2>
+
+
+  <form id="registrationForm">
+    <label for="username">Họ:</label>
+    <input type="text" id="username" name="username" required><br><br>
+     <label for="username">Tên:</label> 
+    <input type="text" id="username" name="username" required><br><br>
+
+
+    <label for="dateOfBirth">Ngày sinh:</label>
+    <select id="day" name="day" required>
+      <option value="">Ngày</option>
+    </select>
+    <select id="month" name="month" required>
+      <option value="">Tháng</option>
+    </select>
+    <select id="year" name="year" required>
+      <option value="">Năm</option>
+    </select><br><br>
+   
+    
+    <label for="gender">Giới tính:</label>
+    <input type="radio" id="male" name="gender" value="Nam" required>
+    <label for="male">Nam</label>
+    <input type="radio" id="female" name="gender" value="Nữ" required>
+    <label for="female">Nữ</label><br><br>
+    
+
+    <label for="số điện thoại">Số điện thoại:</label>
+    <input type="số điện thoại" id="số điện thoại" name="số điện thoại" pattern="[0-9]{10}"><br><br>
+
+
+    <label for="interests">Sở thích:</label>
+    <input type="checkbox" id="sport" name="interests" value="Đọc sách">
+    <label for="sport">Đọc sách</label>
+    <input type="checkbox" id="music" name="interests" value="Xem phim">
+    <label for="music">Xem phim</label>
+    <input type="checkbox" id="art" name="interests" value="Nghe nhạc">
+    <label for="art">Nghe nhạc</label>
+     <input type="checkbox" id="art" name="interests" value="Đá bóng">
+    <label for="art">Đá bóng</label><br><br>
+    
+
+     <label for="khác">Khác:</label>
+    <input type="Khác" id="Khác" name="Khác"><br><br>
+
+
+    <input type="submit" value="Submit">
+     <input type="reset" value="Reset">
+  </form>
+
+
+   <script>
+    // Lấy thẻ select cho ngày, tháng và năm
+    var daySelect = document.getElementById("day");
+    var monthSelect = document.getElementById("month");
+    var yearSelect = document.getElementById("year");
+    // Tạo tùy chọn cho ngày từ 1 đến 31
+    for (var i = 1; i <= 31; i++) {
+      var option = document.createElement("option");
+      option.value = i;
+      option.innerHTML =  "Ngày " + i;
+      daySelect.appendChild(option);
+    }
+
+    // Tạo tùy chọn cho tháng từ 1 đến 12
+    for (var i = 1; i <= 12; i++) {
+      var option = document.createElement("option");
+      option.value = i;
+      option.innerHTML = "Tháng " + i;
+      monthSelect.appendChild(option);
+    }
+
+    // Tạo tùy chọn cho năm từ 1900 đến năm hiện tại
+    var currentYear = new Date().getFullYear();
+    for (var i = 1900; i <= currentYear; i++) {
+      var option = document.createElement("option");
+      option.value = i;
+      option.innerHTML = "Năm " + i;
+      yearSelect.appendChild(option);
+    }
+
+    // Xử lý sự kiện submit của form
+    document.getElementById("registrationForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Ngăn chặn gửi form đi
+
+      var fullName = document.getElementById("fullName").value;
+      var day = daySelect.value;
+      var month = monthSelect.value;
+      var year = yearSelect.value;
+
+      console.log("Họ tên: " + fullName);
+      console.log("Ngày sinh: " + day + "/" + month + "/" + year);
+
+      // Hoặc bạn có thể gửi dữ liệu đăng ký cho server ở đây bằng Ajax hoặc fetch API
+    });
+    event.preventDefault(); // Ngăn chặn gửi form đi
+  </script>
+</body>
+</html>
