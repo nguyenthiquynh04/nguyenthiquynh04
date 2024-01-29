@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+a {
+    color: rgb(66, 68, 189);
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: rgb(76, 7, 116)
+  }
+  h6 {
+    text-align: right;
+  }
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(47, 44, 44);
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  color: rgb(32, 184, 211);
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown select {
+  width: 400px; /* Định nghĩa chiều rộng của thanh thả xuống */
+  display: grid; /* Sử dụng grid */
+  grid-template-columns: repeat(4, 1fr); /* Chia thành 4 cột bằng nhau */
+  grid-auto-rows: min-content; /* Chiều cao tự động */
+}
+
+.dropdown select option {
+  width: 100%; /* Chiếm toàn bộ chiều rộng của cột */
+}
+ul.dropdownt-content {
+  display: none;
+  font-size: 13px;
+  list-style: none;
+  position: absolute;
+  background-color: #1f1f1f;
+  width: 950px;
+  border: 1px solid #5a5a5a;
+  padding: 0;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 10px;
+}
+
+ul.dropdownt-content a {
+  color: rgb(184, 183, 183);
+  padding: 8px 13px;
+ text-decoration: none;
+}
+ul.dropdown ul.dropdownt-content{
+  right:30px;
+  }
+ul.dropdownt-content li:hover > a {
+  color: #0dc0c0;
+}
+
+ul.dropdownt-content li:last-child a {
+  border: none;
+}
+.dropdown > li:hover > ul.dropdownt-content {
+  display: grid;
+}
+
+ul.dropdownt-content li:hover > a {
+  color: #0dc0c0;
+  background-color: #504f4f;
+}
+
+ul.dropdownt-content li:last-child a {
+  border: none;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>My Webside</h1>
+</div>
+<ul>
+  <li class="dropdown">
+    <a href="https://nguyenthiquynh04.000webhostapp.com/Web%20c%C3%A1%20nh%C3%A2n.html" class="dropbtn" style="margin-left: 600px ;margin-top: 20px;">Trang chủ</a>
+    <div class="dropdown-content" style="margin-left: 600px ;" >
+      <a href="#">FaceBook</a>
+      <a href="#">Zalo</a>
+      <a href="#">TikTok</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="https://nguyenthiquynh04.000webhostapp.com/Bu%E1%BB%95i%201.html" class="dropbtn" style="margin-top: 20px;">Buổi 1</a>
+    <div class="dropdown-content">
+        <a href="https://nguyenthiquynh04.000webhostapp.com/B%C3%A0i%201">Bài 1</a>
+        <a href="https://nguyenthiquynh04.000webhostapp.com/B%C3%A0i%202">Bài 2.1</a>
+        <a href="https://nguyenthiquynh04.000webhostapp.com/B%C3%A0i%202.2.html">Bài 2.2</a>
+        <a href="https://nguyenthiquynh04.000webhostapp.com/B%C3%A0i%202.3.html">Bài 2.3</a>
+        <a href="https://nguyenthiquynh04.000webhostapp.com/B%C3%A0i%203.html">Bài 3</a>
+        <a href="https://nguyenthiquynh04.000webhostapp.com/B%C3%A0i%204">Bài 4</a>
+        <a href="https://nguyenthiquynh04.000webhostapp.com/hello.html">Yêu cầu 1</a>
+        <a href="https://nguyenthiquynh04.000webhostapp.com/YC3">Yêu cầu 3</a>
+    </div>
+  </li>
+<li class="dropdown">
+  <a href="https://nguyenthiquynh04.000webhostapp.com/Bu%E1%BB%95i%202.html" class="dropbtn" style="margin-top: 20px;">Buổi 2</a>
+  <div class="dropdown-content">
+          <a href="https://nguyenthiquynh04.000webhostapp.com/B%C3%A0i1.html">Bài 1</a>
+          <a href="https://nguyenthiquynh04.000webhostapp.com/B%C3%A0i%202.1.html">Bài 2.1</a>
+          <a href="https://nguyenthiquynh04.000webhostapp.com/B%C3%A0i%202.2.html">Bài 2.2</a>
+          <a href="https://nguyenthiquynh04.000webhostapp.com/B%C3%A0i%203.1.html">Bài 3.1</a>
+          <a href="https://nguyenthiquynh04.000webhostapp.com/Bai3_2.html">Bài 3.2</a>
+          <a href="https://nguyenthiquynh04.000webhostapp.com/B%C3%A0i%203.3.1.html">Bài 3.3.1</a>
+          <a href="https://nguyenthiquynh04.000webhostapp.com/Bai3.3.2.html">Bài 3.3.2</a>
+          <a href="https://nguyenthiquynh04.000webhostapp.com/B%C3%A0i%204.1.html">Bài 4.1</a>
+          <a href="https://nguyenthiquynh04.000webhostapp.com/B%C3%A0i%204.2.html">Bài 4.2</a>
+  </div>
+</li>
+  <li class="dropdown">
+    <a href="https://nguyenthiquynh04.000webhostapp.com/Bu%E1%BB%95i%203.html" class="dropbtn" style="margin-top: 20px;">Buổi 3</a>
+    <div class="dropdown-content">
+          <a href="https://nguyenthiquynh04.000webhostapp.com/Lam.tai.lop.html">Bài trên lớp</a>    
+          <a href="https://nguyenthiquynh04.000webhostapp.com/B%C3%A0i%201..html">Bài 1</a>
+          <a href="https://nguyenthiquynh04.000webhostapp.com/B%C3%A0i%202.html">Bài 2</a>
+          <a href="https://nguyenthiquynh04.000webhostapp.com/B%C3%A0i%203.Web_m%E1%BB%9Bi.html">Bài 3</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="https://nguyenthiquynh04.000webhostapp.com/B%C3%A0i%2030%20jjj.html" class="dropbtn" style="margin-top: 20px;">Bài 30%</a>
+  </li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn" style="margin-top: 20px;">Buổi 4</a>
+    <div class="dropdown-content">
+      <a href="https://nguyenthiquynh04.000webhostapp.com/B%C3%A0i1.html">Bài 1</a>
+      <a href="https://nguyenthiquynh04.000webhostapp.com/B%C3%A0i%203.html">Bài 3</a>
+      <a href="https://nguyenthiquynh04.000webhostapp.com/B%C3%A0i%204.html">Bài 4</a>
+      <a href="https://nguyenthiquynh04.000webhostapp.com/B%C3%A0i%205.html">Bài 5</a>
+      <a href="https://nguyenthiquynh04.000webhostapp.com/Web%20c%C3%A1%20nh%C3%A2n.html">Bài 6</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn" style="margin-top: 20px;">Buổi 5</a>
+    <div class="dropdown-content">
+      <a href="https://nguyenthiquynh04.000webhostapp.com/B%C3%A0i%20t%E1%BA%ADp%20tr%C3%AAn%20l%E1%BB%9Bp.html">Bài trên lớp</a>
+      <a href="https://nguyenthiquynh04.000webhostapp.com/B%C3%A0i%201.1.html">Bài 1.1</a>
+      <a href="https://nguyenthiquynh04.000webhostapp.com/B%C3%A0i%201.2.html">Bài 1.2</a>
+      <a href="https://nguyenthiquynh04.000webhostapp.com/B%C3%A0i%201.3.html">Bài 1.3</a>
+      <a href="https://nguyenthiquynh04.000webhostapp.com/B%C3%A0i%201.4.html">Bài 1.4</a>
+      <a href="https://nguyenthiquynh04.000webhostapp.com/B%C3%A0i%202.html">Bài 2</a>
+      <a href="https://nguyenthiquynh04.000webhostapp.com/B%C3%A0i%203.1.html">Bài 3.1</a>
+      <a href="https://nguyenthiquynh04.000webhostapp.com/B%C3%A0i%203.2.html">Bài 3.2</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn" style="margin-top: 20px;">Buổi 6</a>
+    <div class="dropdown-content">
+      <a href="https://nguyenthiquynh04.000webhostapp.com/B%C3%A0i%20t%E1%BA%ADp%20tr%C3%AAn%20l%E1%BB%9Bp.html">Bài trên lớp</a>
+      <a href="https://nguyenthiquynh04.000webhostapp.com/B%C3%A0i%201.html">Bài 1</a>
+      <a href="https://nguyenthiquynh04.000webhostapp.com/B%C3%A0i%202.html">Bài 2</a>
+      <a href="https://nguyenthiquynh04.000webhostapp.com/B%C3%A0i%203.1.html">Bài 3.1</a>
+      <a href="https://nguyenthiquynh04.000webhostapp.com/B%C3%A0i%203.2.html">Bài 3.2</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn" style="margin-top: 20px;">Buổi 7</a>
+    <div class="dropdown-content">
+      <a href="https://nguyenthiquynh04.000webhostapp.com/B%C3%A0i%201.html">Bài 1</a>
+      <a href="https://nguyenthiquynh04.000webhostapp.com/B%C3%A0i%202.html">Bài 2</a>
+    </div>
+  </li>
+
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Nguyễn Thị Quỳnh</h2>
+      <h5>Mã SV:222001490<br>Lớp: CNTT D2022A<br>Học phần: Thiết kế Web</h5>
+      <div class="fakeimg"><img src="https://minhtuan.com.vn/userfiles/2021/01/thiet-ke-web-la-gi-2640.jpg" style="width:1000px;height:300px;"></div>
+      <h5>Hiểu hơn về thiết kế Web</h5>
+      <p>Thiết kế web là việc tạo ra một trang web cho cá nhân, tổ chức, công ty hay doanh nghiệp. Thiết kế web gồm thiết kế web tĩnh và động:<br>
+        Thiết kế web tĩnh: Là việc dùng các đoạn mã HTML, video, hình ảnh, Flash, Javascript, CSS để tạo giao diện web. Tên tập tin được lưu sẽ có phần mở rộng là .html hoặc .htm. Thiết kế web tĩnh không có hệ CSDL như MySQL và MSSQL.<br>
+        Thiết kế web động: Là web có hệ thống CSDL cung cấp thông tin cho website. Ưu điểm của web động là khả năng tương tác trên hệ thống web, quản lý dữ liệu web tốt, dễ dàng cập nhật nội dung, thêm tính năng quản lý đơn giản và thân thiện với người sử dụng.</p>
+    </div>
+    <div class="card">
+      <h3>W3school</h3>
+      <h5>Bạn có thể học và tìm hiểu w3school về thiết kế Web :<a href ="https://www.w3schools.com/">Tại đây</a></h5>
+      <div class="fakeimg"><img src="https://www.technotification.com/wp-content/uploads/2021/08/w3schools-offline-website.jpg" style="width:1000px;height:300px;"></div>
+      <p>W3schools.com là một website cung cấp các thông tin liên quan đến các ngôn ngữ lập trình như HTML & CSS, Javascript, PHP, Python, C#...cách diễn giải của website này rất đơn giản và thân thiện với những người mới học và tiếp xúc với một loại ngôn ngữ mới.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <div class="fakeimg"><img src="https://www.dzr-web.com/wp-content/uploads/2023/10/thiet-ke-web-hoc-nganh-gi.jpg" style="width:260px;height:200px;">
+         <a href="https://www.dzr-web.com/thiet-ke-web-hoc-nganh-gi/" target="_blank">Thiết Kế Web Học Ngành Gì? Cơ Hội Việc Làm Và Mức Thu Nhập</a>
+      </div>
+      <h5>Liên quan :<a href ="https://webso.vn/thiet-ke-website-nganh-nhua/">Tại đây</a></h5>
+    </div>
+    <div class="card">
+      <h3>Có thể bạn chưa biết ?</h3>
+      <div class="fakeimg"><a href="https://megaweb.vn/thi-truong-thiet-ke-website-tai-viet-nam"><img src="https://megaweb.vn/upload/files/thi-truong-thiet-ke-website-1.jpg" alt="" style="width:260px;height:100px;"></a></div>
+      <div class="fakeimg"><a href="https://daotaowebsite.com/nganh-thiet-ke-web-luong-cao-khong/"><img src="https://daotaowebsite.com/wp-content/uploads/2021/05/nganh-thiet-ke-web-luong-cao-khong-768x402.jpg" alt="" style="width:260px;height:100px;"></a></div>
+      <div class="fakeimg"><a href="https://freelancervietnam.vn/nhung-thuat-ngu-trong-thiet-ke-website-cau-hoi-thuong-gap-trong-nganh-thiet-ke-website/"><img src="https://freelancervietnam.vn/wp-content/uploads/2019/04/breakfast-lunch-768x432.jpg" alt="" style="width:260px;height:100px;"></a></div>
+    </div>
+    <div class="card">
+      <h4>Ngành thiết kế Website là một lĩnh vực đầy tiềm năng với nhiều cơ hội phát triển.Mức thu nhập của ngành thiết kế Website tại Việt Nam có thể biến đổi theo nhiều yếu tố như kỹ năng, kinh nghiệm, vị trí công việc, hay thị trường lao động.</h4>
+      <h4>Để thành lập trình viên front-end phải tinh thông 3 ngôn ngữ chính: HTML, CSS, và ngôn ngữ lập trình JavaScript.</h4>
+    </div>
+  </div>
+</div>
+<p style="font-size:48px;text-align: center;">
+    &#128512; &#128516; &#128525; &#128151;
+</div>
+<div class="footer">
+  <h2>Thông tin</h2>
+  <i class="fa fa-phone-square" style="font-size:24px;color:rgb(143, 191, 194);margin-left:120px;"></i>  Call Us : 0387448361
+  <i class="fa fa-envelope-square" style="font-size:24px;color:rgb(143, 191, 194);margin-left:20px;"></i> Email : quynhsky771977@gmail.com
+</div>
+
+</body>
+</html>
+
