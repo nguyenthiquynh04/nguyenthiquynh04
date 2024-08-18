@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+
+    <title>Portfolio NTQ</title>
+    <script src="https://kit.fontawesome.com/d020000033.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="60.css">
+</head>
+<body>
+    <header>
+        <h1 style="font-family: 'Protest Revolution', sans-serif;margin-left: 20px;">Portfolio</h1>
+
+        <div>
+            <div class="header-icons">
+            <input type="text" placeholder="Search...">
+            <a href="#">  <i class='fas fa-user-alt' style="margin-left: 20px;color:black;"></i></a>
+            <i class="fa fa-phone" style="font-size: 12px;margin-left: 20px;"> 0387448361</i></div>
+        </div>
+    </header>
+    <nav>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#"><i class="fas fa-backspace"></i></a></li>
+            <li><a href="#">About</a></li>
+            <li class="dropdown">
+                <a href="#">Portfolio of Work<i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a href="https://nguyenthiquynh04.000webhostapp.com/Buoi1LTW.html">Buổi 1</a></li>
+                  <li><a href="https://nguyenthiquynh04.000webhostapp.com/Buoi2LTW.html">Buổi 2</a></li>
+                  <li><a href="https://nguyenthiquynh04.000webhostapp.com/B3.html">Buổi 3</a></li>
+                  <li><a href="https://nguyenthiquynh04.000webhostapp.com/B30.html">Bài 30%</a></li>
+                  <li><a href="https://nguyenthiquynh04.000webhostapp.com/B4.html">Buổi 4</a></li>
+                  <li><a href="https://nguyenthiquynh04.000webhostapp.com/B5.html">Buổi 5</a></li>
+                  <li><a href="https://nguyenthiquynh04.000webhostapp.com/B6.html">Buổi 6</a></li>
+                  <li><a href="https://nguyenthiquynh04.000webhostapp.com/B7.html">Buổi 7</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Services / Works</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="https://nguyenthiquynh04.000webhostapp.com/contact.html">Contact </a></li>
+        </ul>
+        <ul>
+            <li><a href="https://nguyenthiquynh04.000webhostapp.com/60.html">Home</a></li>
+            <li class="hideOnMobile"><a href="#">About</a></li>
+            <li class="hideOnMobile dropdown">
+                <a href="#">Portfolio of Work<i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a href="https://nguyenthiquynh04.000webhostapp.com/Buoi1LTW.html">Buổi 1</a></li>
+                  <li><a href="https://nguyenthiquynh04.000webhostapp.com/Buoi2LTW.html">Buổi 2</a></li>
+                  <li><a href="https://nguyenthiquynh04.000webhostapp.com/B3.html">Buổi 3</a></li>
+                  <li><a href="https://nguyenthiquynh04.000webhostapp.com/B30.html">Bài 30%</a></li>
+                  <li><a href="https://nguyenthiquynh04.000webhostapp.com/B4.html">Buổi 4</a></li>
+                  <li><a href="https://nguyenthiquynh04.000webhostapp.com/B5.html">Buổi 5</a></li>
+                  <li><a href="https://nguyenthiquynh04.000webhostapp.com/B6.html">Buổi 6</a></li>
+                  <li><a href="https://nguyenthiquynh04.000webhostapp.com/B7.html">Buổi 7</a></li>
+                </ul>
+            </li>
+            <li class="hideOnMobile"><a href="#">Services / Works</a></li>
+            <li class="hideOnMobile"><a href="#">Testimonials</a></li>
+            <li class="hideOnMobile"><a href="https://nguyenthiquynh04.000webhostapp.com/contact.html">Contact </a></li>
+            <li class="menu-button" onclick="showSidebar()"><a href="#"><i class="fas fa-align-right"></i></a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="vertical-line">
+        <div class="left-column">
+          <h3 style="margin-left: 100px;">Mục Lục</h3>
+          
+    <ul class="mucluc" style ="margin-left:100px;">
+        <li><a href="#P1">About</a></li>
+        <li><a href="#P2">Portfolio of Work</a></li>
+        <li><a href="#P3">Services / Works</a></li>
+        <li><a href="#P4">Testimonials</a></li>
+        <li><a href="#P5">Contact</a></li>
+    </ul>
+    <form action="" id="P5">
+      <div class="container1">
+          <h3>Contact</h3>
+          <div class="form-control">
+              <input type="text" placeholder="Username" id="username">
+              <small></small>
+              <span></span>
+          </div>
+          <div class="form-control">
+              <input type="email" placeholder="Email" id="email">
+              <small></small>
+              <span></span>
+          </div>
+          <div class="form-control">
+              <input type="password" placeholder="Password" id="password">
+              <small></small>
+              <span></span>
+          </div>
+          <div class="form-control">
+              <input type="password" placeholder="Confirm Password" id="confirm-password">
+              <small></small>
+              <span></span>
+          </div>
+          <button type="submit" class="btn-submit">Login</button>
+          <div class="signup-link">
+              Not a member? <a href="#">Signup</a>
+          </div>
+      </div>
+  </form>
+
+        </div>
+        </div>
+        <div class="right-column">
+            <div class="image-with-text">
+                <img src="quynh1.jpg" alt="">
+                <div class="text" id="P1">
+                  <p>Xin chào, tôi tên là Nguyễn Thị Quỳnh. Hiện đang là sinh viên năm 2 ngành Công nghệ thông tin,tại trường Đại học Thủ Đô Hà Nội.Trong môi trường học tập năng động, tích cực, tôi đã học được rất nhiều kiến thức về chuyên môn cũng như các khả năng giao tiếp, làm việc nhóm và báo cáo bài tập.Với những điều đó,đã giúp tôi đạt được kết quả tốt và có những kĩ năng chuyên môn ổn định.</p>
+                </div>
+            </div>
+            <h3 style="margin-top: 80px;text-align: center;font-family: 'Protest Riot', sans-serif;">Some Skills</h3>
+            <p style="margin-top: 20px;margin-left: 10px;margin-right: 10px;">Trong gần 2 năm học tại trường, tôi đã rèn luyện được một số kĩ năng cơ bản về thiết kế web, đồ họa ứng dụng, lập trình cơ bản, kiến trúc máy tính...Những kĩ năng đó đã giúp ích cho tôi rất nhiều trong cuộc sống.Nó khiến tôi cảm thấy yêu thích công nghệ hơn.</p>
+            <div class="nested-grid">
+              <div class="nested-column">
+                <img src="a10.jpg" style="height:100px;width:200px;">
+                <p>Web Design</p>
+              </div>
+              <div class="nested-column">
+                <img src="a8.jpg" style="height:100px;width:200px;">
+                <p>Graphics</p>
+              </div>
+              <div class="nested-column">
+                <img src="a7.png" style="height:100px;width:200px;">
+                <p>Program</p>
+              </div>
+              <div class="nested-column">
+                <img src="a9.jpg" style="height:100px;width:200px;">
+                <p>Computer architecture</p>
+              </div>
+            </div>
+            <h3 style="margin-top: 50px;text-align: center;font-family: 'Protest Riot', sans-serif;">Portfolio of Work</h3>
+            <p style="margin-top: 20px;margin-left: 10px;margin-right: 10px;">Ở học phần thiết kế Web, tôi đã tìm hiểu được nhiều thứ và rèn luyện được một số các kĩ năng thiết kế Web thông qua HTML, CSS, JAVASCRIPT...Tôi đã có thể tự mình thiết kế một Font End cho trang Web với nhiều Webside như bán hàng, tin tức, web cá nhân, công viêc...Hãy xem những gì tôi đã làm ở bên dưới nhé.</JAVASCRIPT></p>
+            <div class="image-row" id="P2">
+              <a href="https://nguyenthiquynh04.000webhostapp.com/B1.html">
+                <div class="image-container" data-content="Buổi 1">
+                  <img src="a1.jpg" alt="">
+                </div>
+              </a>
+              <a href="https://nguyenthiquynh04.000webhostapp.com/B2.html">
+                <div class="image-container" data-content="Buổi 2">
+                  <img src="a2.jpg" alt="">
+                </div>
+              </a>
+              <a href="https://nguyenthiquynh04.000webhostapp.com/B3.html">
+                <div class="image-container" data-content="Buổi 3">
+                  <img src="a3.jpg" alt="">
+                </div>
+              </a>
+              <a href="https://nguyenthiquynh04.000webhostapp.com/B30.html">
+                <div class="image-container" data-content="Bài 30%">
+                  <img src="a4.jpg" alt="">
+                </div>
+              </a>
+              <a href="https://nguyenthiquynh04.000webhostapp.com/B4.html">
+                <div class="image-container" data-content="Buổi 4">
+                  <img src="a14.jpg" alt="">
+                </div>
+              </a>
+              <a href="https://nguyenthiquynh04.000webhostapp.com/B5.html">
+                <div class="image-container" data-content="Buổi 5">
+                    <img src="a5.jpg" alt="">
+                </div>
+              </a>
+              <a href="https://nguyenthiquynh04.000webhostapp.com/B6.html">
+                <div class="image-container" data-content="Buổi 6">
+                    <img src="a6.jpg" alt="">
+                </div>
+              </a>
+              <a href="https://nguyenthiquynh04.000webhostapp.com/B7.html">
+                <div class="image-container" data-content="Buổi 7">
+                    <img src="a15.jpg" alt="">
+                </div>
+              </a>
+            </div>
+            <h3 style="margin-top: 50px;text-align: center;font-family: 'Protest Riot', sans-serif;">Services /works</h3>
+            <div class="nested-grid">
+              <div class="nested-column">
+                <i class='fas fa-mobile-alt' style='font-size:36px;margin-top: 10px;'></i>
+                <p>Font End</p>
+              </div>
+              <div class="nested-column">
+                <i class="fa fa-laptop" style="font-size:36px;margin-top: 10px;"></i>
+                <p>Graphics C++</p>
+              </div>
+              <div class="nested-column">
+                <i class='fas fa-address-book' style='font-size:36px;margin-top: 10px;'></i>
+                <p>Database System</p>
+              </div>
+              <div class="nested-column">
+              <i class='fas fa-address-card' style='font-size:36px;margin-top: 10px;'></i>
+                <p>Photoshop</p>
+              </div>  
+            </div>
+                <h3 style="margin-top: 50px;text-align: center;font-family: 'Protest Riot', sans-serif;">Testimonials</h3>
+                <div class="contai" id="P4">
+                  <img src="a11.jpg" alt="Avatar" style="width:90px">
+                  <p><span>Ngọc Huyền</span> CNTT D2022A</p>
+                  <p>Trang web của bạn thiết kế khá tốt, tôi rất thích nó, hãy cố gắng phát triển thêm nhé.</p>
+                  <p>Tôi sẽ dõi theo bạn!</p>
+                </div>
+                
+                <div class="contai">
+                  <img src="a12.jpg" alt="Avatar" style="width:90px">
+                  <p><span>Thu Hoài</span> CNTT D2022B</p>
+                  <p>Tôi rất thích sự sáng tạo của bạn, hãy làm thêm nhiều trang web bổ ích hơn nhé.</p>
+                  <p>Ủng hộ bạn!</p>
+                </div>
+                <div class="contai">
+                  <img src="a13.jpg" alt="Avatar" style="width:90px">
+                  <p><span>Thanh Hằng</span> CNTT D2022A</p>
+                  <p>Tôi đã theo dõi bạn khá lâu, phần thiết kế của bạn khá tốt nhưng vẫn cần học hỏi thêm để làm tốt hơn nữa.</p>
+                  <p>Hãy tiếp tục phát huy nhé.</p>
+                </div>
+    <footer class="footer">
+      <div class="column">
+        <h2>Về chúng tôi</h2>
+        <h4>Giới thiệu<br>Thông tin<br>Cập nhật<br>Trợ giúp</h4>
+      </div>
+      <div class="column">
+        <h2>Liên hệ</h2>
+        <h4>DĐ: 0387448361<br>Email: quynhsky771977@gmail.com</h4>
+      </div>
+      <div class="column">
+        <h2>Theo dõi chúng tôi</h2>
+        <i style='font-size:30px;color:black' class='fab'>&#xf082;</i>
+       <i class='fab fa-twitter-square' style='font-size:30px;color:black'></i>
+       <i class='fab fa-instagram' style='font-size:30px;color:black'></i>
+      </div>
+    </footer>
+    </div>
+    </div>
+    <script src ="60.js"></script>
+</body>
+</html>
